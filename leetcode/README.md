@@ -2,7 +2,7 @@
 
 ## Problems
 
-| ID | Problem | Official<br/>Solution | C++ | Java | Python |
+| ID | Problem | Official<br/>Solution | C++ | Golang | Python |
 | --- | --- | :---: | :---: | :---: | :---: |
 | 001 | [Two Sum](https://leetcode.com/problems/two-sum/description/) | [solution](https://leetcode.com/problems/two-sum/solution/) | [C++](Algorithms/0001-Two-Sum/) | | |  
 | 002 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/) | [solution](https://leetcode.com/problems/add-two-numbers/solution/) | [C++](Algorithms/) | | |  
