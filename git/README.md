@@ -19,15 +19,15 @@ DVCS: 把集中式版本控制系统的服务端和客户端都交给参与开�
 ## 目录
 * [展示帮助信息](#展示帮助信息)
 * [配置本机的用户名和Email地址](#配置本机的用户名和Email地址)  
-* [git ssh密钥创建](#git ssh密钥创建)  
-* [Git 创建仓库](#Git 创建仓库) 
-* [Git 增加文件](#Git 增加文件)  
-* [Git 删除文件](#Git 删除文件)  
-* [Git 代码提交](#Git 代码提交)  
-* [Git 查看信息](#Git 查看信息) 
-* [Git 分支](#Git 分支) 
-* [Git 列出所有远程分支](#Git 列出所有远程分支) 
-* [Git 列出所有本地和远程分支](#Git 列出所有本地和远程分支) 
+* [Git-ssh创建](#ssh创建)  
+* [Git-创建仓库](#Git-创建仓库) 
+* [Git-增加文件](#Git-增加文件)  
+* [Git-删除文件](#Git-删除文件)  
+* [Git-代码提交](#Git-代码提交)  
+* [Git-查看信息](#Git-查看信息) 
+* [Git-分支](Git-分支) 
+* [Git-列出所有远程分支](#Git-列出所有远程分支) 
+* [Git-列出所有本地和远程分支](#Git-列出所有本地和远程分支) 
 * [快速切换到上一个分支](#快速切换到上一个分支)
 * [删除已经合并到 master 的分支](#删除已经合并到 master 的分支)
 * [展示本地分支关联远程仓库的情况](#展示本地分支关联远程仓库的情况)  
@@ -108,7 +108,7 @@ git config --global user.name "your name"
 git config --global user.email "your email@example.com"
 ```
 
-## git ssh创建
+## Git ssh创建
 
 ```sh
 ssh-keygen -t rsa -C 'your email@example.com'
