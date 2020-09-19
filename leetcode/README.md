@@ -308,7 +308,7 @@
 | 401 | [Binary Watch](https://leetcode.com/problems/binary-watch/) | [无] | [C++](Algorithms/) | | |  
 | 402 | [Remove K Digits](https://leetcode.com/problems/remove-k-digits/) | [solution](https://leetcode.com/problems/remove-k-digits/solution/)  | [C++](Algorithms/) | | |  
 | | | | | | |  
-| 404 | [Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves/) | [无] | [C++](Algorithms/) | | |  
+| 404 | [Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves/) | [solution](https://leetcode.com/problems/sum-of-left-leaves/solution/) | [C++](Algorithms/0404-Sum-of-Left-Leaves/cpp-0404/) | | |  
 | | | | | | |  
 | 410 | [Split Array Largest Sum](https://leetcode.com/problems/split-array-largest-sum/) | [solution](https://leetcode.com/problems/split-array-largest-sum/solution/)  | [C++](Algorithms0/) | | |  
 | | | | | | |  
