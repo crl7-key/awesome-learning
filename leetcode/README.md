@@ -315,7 +315,7 @@
 | 412 | [Fizz Buzz](https://leetcode.com/problems/fizz-buzz/description/) | [solution](https://leetcode.com/problems/fizz-buzz/solution/) | [C++](Algorithms/) | | |  
 | | | | | | |
 | 414 | [Third Maximum Number](https://leetcode.com/problems/third-maximum-number/) | [无] | [C++](Algorithms/) | | |  
-| | | | | | |
+| 415 | [Add Strings](https://leetcode.com/problems/add-strings/) |[solution](https://leetcode.com/problems/add-strings/solution/) |[C++](Algorithms/0415-Add-Strings/cpp-0415/) | | |  
 | 416 | [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/description/) | [无] | [C++](Algorithms/) | | |  
 | 417 | [Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/description/) | [无] | | | |  
 | | | | | | |  
