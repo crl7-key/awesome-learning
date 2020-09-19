@@ -17,8 +17,8 @@
 | 014 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/description/) | [无] | [C++](Algorithms/) | | |  
 | 015 | [3Sum](https://leetcode.com/problems/3sum/description/) | [无] | [C++](Algorithms/) | | |  
 | 016 | [3Sum Closest](https://leetcode.com/problems/3sum-closest/description/) | [无] | [C++](Algorithms/) | | |  
-| 017 | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/) | [solution](https://leetcode.com/problems/letter-combinations-of-a-phone-number/solution/) | [C++]Algorithms/) | | |  
-| 018 | [4Sum](https://leetcode.com/problems/4sum/description/) | [无] | [C++]Algorithms/) | | |  
+| 017 | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/)  | [solution](https://leetcode.com/problems/letter-combinations-of-a-phone-number/solution/) | [C++](Algorithms/) | | |   
+| 018 | [4Sum](https://leetcode.com/problems/4sum/description/) | [无] | [C++](Algorithms/) | | |
 | 019 | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/) | [solution](https://leetcode.com/problems/remove-nth-node-from-end-of-list/solution/) | [C++](Algorithms/) | | |  
 | 020 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/description/) | [solution](https://leetcode.com/problems/valid-parentheses/solution/) | [C++](Algorithms/) | | |  
 | 021 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/description/) | [solution](https://leetcode.com/problems/merge-two-sorted-lists/solution/) | [C++](Algorithms/) | | |  
@@ -324,7 +324,7 @@
 | 426 | [Convert Binary Search Tree to Sorted Doubly Linked List](https://leetcode.com/problems/convert-binary-search-tree-to-sorted-doubly-linked-list/) | [solution](https://leetcode.com/problems/convert-binary-search-tree-to-sorted-doubly-linked-list/solution/) | [C++](Algorithms/) | | |  
 | | | | | | |  
 | 429 | [N-ary Tree Level Order Traversal](https://leetcode.com/problems/n-ary-tree-level-order-traversal/) | [无] | [C++](Algorithms/) | | |  
-| 430 | [Flatten a Multilevel Doubly Linked List](https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/description/) | [无] | [solution](Algorithms/) | | |  
+| 430 | [Flatten a Multilevel Doubly Linked List](https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/description/) | [无] | [c++](Algorithms/) | | |  
 | | | | | | |  
 | 434 | [Number of Segments in a String](https://leetcode.com/problems/number-of-segments-in-a-string/description/) | | [C++](Algorithms/) | | |  
 | 435 | [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/description/) | [solution](https://leetcode.com/problems/non-overlapping-intervals/solution/) | [C++](Algorithms/) | | |  
