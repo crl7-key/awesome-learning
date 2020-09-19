@@ -8,10 +8,8 @@
 | 002 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/) | [solution](https://leetcode.com/problems/add-two-numbers/solution/) | [C++](Algorithms/0002-Add-Two-Numbers/cpp-0002/) | | |  
 | 003 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/) | [solution](https://leetcode.com/problems/longest-substring-without-repeating-characters/solution/) | [C++](Alogrithms/) | | |    
 | 004 | [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/) | [solution](https://leetcode.com/problems/median-of-two-sorted-arrays/solution/) | [C++](Algorithms/) | | |  
-| 005 | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) | [solution](https://leetcode.com/problems/longest-palindromic-substring/solution/) | [C++](Algorithms/) | | |  
-| | | | | | |  
+| 005 | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) | [solution](https://leetcode.com/problems/longest-palindromic-substring/solution/) | [C++](Algorithms/) | | |   
 | 007 | [Reverse Integer](https://leetcode.com/problems/reverse-integer/description/) | [solution](https://leetcode.com/problems/reverse-integer/solution/) | [C++](Algorithms/) | | |  
-| | | | | | |
 | 010 | [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/) | [solution](https://leetcode.com/problems/regular-expression-matching/solution/) | [C++](Algorithms/) | | |  
 | 011 | [Container With Most Water](https://leetcode.com/problems/container-with-most-water/description/) | [solution](https://leetcode.com/problems/container-with-most-water/solution/) | [C++](Algorithms/) | | |  
 | 012 | [Integer to Roman](https://leetcode.com/problems/integer-to-roman/description/) | [无] | [C++](Algorithms/) | | |  
