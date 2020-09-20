@@ -72,7 +72,7 @@
 | 075 | [Sort Colors](https://leetcode.com/problems/sort-colors/description/) | [solution](https://leetcode.com/problems/sort-colors/solution/) | [C++](Algorithms/) | | |  
 | 076 | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/description/) | [solution](https://leetcode.com/problems/minimum-window-substring/solution/) | [C++](Algorithms/) | | |  
 | 077 | [Combinations](https://leetcode.com/problems/combinations/description/) | [solution](https://leetcode.com/problems/combinations/solution/) | [C++](Algorithms/) | | |
-| | | | | | |  
+| 078 | [Subsets](https://leetcode.com/problems/subsets/) |[solution](https://leetcode.com/problems/subsets/solution/) | [C++](Algorithms/0078-Subsets/cpp-0078/)| | |  
 | 079 | [Word Search](https://leetcode.com/problems/word-search/description/) | [无] | [C++](Algorithms/) | | |  
 | 080 | [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/description/) | [无] | [C++](Algorithms/) | | |  
 | | | | | | |  
