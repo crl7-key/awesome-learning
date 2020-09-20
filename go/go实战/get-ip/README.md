@@ -8,7 +8,7 @@
 * [什么是公网IP](#什么是公网IP)  
 * [获取公网IP](#获取公网IP)    
 * [使用golang获取公网IP](#使用golang获取公网IP)    
-* [通过dns服务器8.8.8.8:80获取使用的ip](#通过dns服务器`8.8.8.8:80`获取使用的ip)   
+* [通过dns服务器8.8.8.8:80获取使用的ip](#通过dns服务器8.8.8.8:80获取使用的ip)   
 * [判断是否是公网IP](#判断是否是公网IP)   
 * [IP地址string转int](#IP地址string转int)   
 * [IP地址int转string](#IP地址int转string)   
@@ -97,7 +97,7 @@ func GetIntranetIp() {
 ```
 
 
-## 通过dns服务器`8.8.8.8:80`获取使用的ip  
+## 通过dns服务器8.8.8.8:80获取使用的ip  
 ```golang
 func GetPulicIP() string {
     conn, _ := net.Dial("udp", "8.8.8.8:80")
