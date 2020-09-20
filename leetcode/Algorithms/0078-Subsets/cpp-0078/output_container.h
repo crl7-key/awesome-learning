@@ -1,8 +1,6 @@
 #ifndef H_OUTPUT_CONTAINER_H
 #define H_OUTPUT_CONTAINER_H
 
-#endif // !H_OUTPUT_CONTAINER_H
-
 #include <iostream>     // std::ostream
 #include <type_traits>  // std::false_type/true_type/decay_t/is_same_v
 #include <utility>      // std::declval/pair
@@ -110,5 +108,4 @@ std::ostream& operator<<(std::ostream& os, const std::pair<T, U>& pr)
     return os;
 }
 
-
-
+#endif // !H_OUTPUT_CONTAINER_H
