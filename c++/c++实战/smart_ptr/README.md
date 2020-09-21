@@ -19,8 +19,7 @@ public:
   explicit shape_wrapper(
     shape* ptr = nullptr)
     : ptr_(ptr) {}
-  ~shape_wrapper()
-  {
+  ~shape_wrapper() {
     delete ptr_;
   }
   shape* get() const { return ptr_; }
@@ -44,8 +43,7 @@ class smart_ptr {
 public:
   explicit smart_ptr(T* ptr = nullptr)
     : ptr_(ptr) {}
-  ~smart_ptr()
-  {
+  ~smart_ptr() {
     delete ptr_;
   }
   T* get() const { return ptr_; }
@@ -171,8 +169,8 @@ int main()
 ```
 
 上面的代码的惯用法保证了强异常安全性：赋值分为拷贝构造和交换两步，异常只可能在第一步发生；而第一步如果发生异常的话，`this`对象完全不受任何影响。无论拷贝构造成功与否，结果只有赋值成功和赋值没有效果两种状态，而不会发生因为赋值破坏了当前对象的这种场景。
-但是**`auto_ptr`在`C++17`时已经被正式从 C++ 标准里删除了。
-** 上面的实现的最大问题就是，**它的行为会让程序员非常容易犯错。一不小心把它传递给另一个smart_ptr,你就不再拥有这个对象了。**
+但是`auto_ptr`在`C++17`时已经被正式从 C++ 标准里删除了。
+ 上面的实现的最大问题就是，**它的行为会让程序员非常容易犯错。一不小心把它传递给另一个smart_ptr,你就不再拥有这个对象了。**
 
 ## scoped_ptr
 
