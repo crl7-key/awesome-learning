@@ -379,11 +379,12 @@
 | 529 | [Minesweeper](https://leetcode.com/problems/minesweeper/) | [无] | [C++](Algorithms/) | | |  
 | 530 | [Minimum Absolute Difference in BST](https://leetcode.com/problems/minimum-absolute-difference-in-bst/description/) | [无] | | | |  
 | | | | | | |  
+| 538 | [Convert BST to Greater Tree](https://leetcode.com/problems/convert-bst-to-greater-tree/) | [solution](https://leetcode.com/problems/convert-bst-to-greater-tree/solution/) | [C++](Algorithms/0538-Convert-BST-to-Greater-Tree/cpp-0538/) | | |   
 | 541 | [Reverse String II](https://leetcode.com/problems/reverse-string-ii/description/) | [solution](https://leetcode.com/problems/reverse-string-ii/solution/) | [C++](Algorithms/) | | |  
 | 542 | [01 Matrix](https://leetcode.com/problems/01-matrix/description/) | [solution](https://leetcode.com/problems/01-matrix/solution/) | [C++](Algorithms/) | | |  
 | | | | | | |  
 | 557 | [Reverse Words in a String III](https://leetcode.com/problems/reverse-words-in-a-string-iii/description/) | [solution](https://leetcode.com/problems/reverse-words-in-a-string-iii/solution/) | [C++](Algorithms/) | | |  
-| 538 | [Convert BST to Greater Tree](https://leetcode.com/problems/convert-bst-to-greater-tree/) | [solution](https://leetcode.com/problems/convert-bst-to-greater-tree/solution/) | [C++](Algorithms/0538-Convert-BST-to-Greater-Tree/cpp-0538/) | | |  
+| | | | | | |    
 | 559 | [Maximum Depth of N-ary Tree](https://leetcode.com/problems/maximum-depth-of-n-ary-tree/description/) | [solution](https://leetcode.com/problems/maximum-depth-of-n-ary-tree/solution/) | [C++](Algorithms/) | | |  
 | | | | | | |  
 | 561 | [Array Partition I](https://leetcode.com/problems/array-partition-i/description/) | [solution](https://leetcode.com/problems/array-partition-i/solution/) | [C++](Algorithms/) | | |  
