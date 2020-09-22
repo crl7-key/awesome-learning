@@ -652,7 +652,7 @@
 | 965 | [Univalued Binary Tree](https://leetcode.com/problems/univalued-binary-tree/) | [solution](https://leetcode.com/problems/univalued-binary-tree/solution/) | [C++](Algorithms/) | | |  
 | 966 | [Vowel Spellchecker](https://leetcode.com/problems/vowel-spellchecker/) | [solution](https://leetcode.com/problems/vowel-spellchecker/solution/) | [C++](Algorithms/) | | |  
 | 967 | [Numbers With Same Consecutive Differences](https://leetcode.com/problems/numbers-with-same-consecutive-differences/) | [solution](https://leetcode.com/problems/numbers-with-same-consecutive-differences/solution/) | [C++](Algorithms/) | | |  
-| 968 | [Binary Tree Cameras](https://leetcode.com/problems/binary-tree-cameras/) | [solution](https://leetcode.com/problems/binary-tree-cameras/solution/) | [C++](Algorithms/) | | |  
+| 968 | [Binary Tree Cameras](https://leetcode.com/problems/binary-tree-cameras/) | [solution](https://leetcode.com/problems/binary-tree-cameras/solution/) | [C++](Algorithms/0968-Binary-Tree-Cameras/cpp-0968/) | | |  
 | 969 | [Pancake Sorting](https://leetcode.com/problems/pancake-sorting/) | [solution](https://leetcode.com/problems/pancake-sorting/solution/) | [C++](Algorithms/) | | |  
 | 970 | [Powerful Integers](https://leetcode.com/problems/powerful-integers/) | [solution](https://leetcode.com/problems/powerful-integers/solution/) | [C++](Algorithms/) | | | 
 | 971 | [Flip Binary Tree To Match Preorder Traversal](https://leetcode.com/problems/flip-binary-tree-to-match-preorder-traversal/) | [solution](https://leetcode.com/problems/flip-binary-tree-to-match-preorder-traversal/solution/) | [C++](Algorithms/) | | |  
