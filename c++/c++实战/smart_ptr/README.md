@@ -1,4 +1,5 @@
 # Smart_ptr 智能指针:paperclip:
+![](https://img.shields.io/badge/standard--readme-MIT-green?style=flat&logo=appveyor)   
 
 使用智能指针可以简化资源的管理，从根本上消除资源(包括内存)泄露的可能性。智能指针的本质上就是`RAII`资源管理功能的自然展现。
 
