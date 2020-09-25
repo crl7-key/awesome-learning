@@ -100,7 +100,7 @@
 | 103 | [Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/) | [无] | [C++](Algorithms/) | | |  
 | 104 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/) | [solution](https://leetcode.com/problems/maximum-depth-of-binary-tree/solution/) | [C++](Algorithms/) | | |  
 | 105 | [Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/description/) | [solution](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/solution/) | [C++](Algorithms/) | | |  
-| 106 | [Construct Binary Tree from Inorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/description/) | [无] | [C++](Algorithms/) | | |  
+| 106 | [Construct Binary Tree from Inorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/description/) | [无] | [C++](Algorithms/0106-Construct-Binary-Tree-from-Inorder-and-Postorder-Traversal/cpp-0106/) | | |  
 | 107 | [Binary Tree Level Order Traversal II](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/description/) | [无] | [C++](Algorithms/) | | |  
 | 108 | [Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/) | [无] | [C++](Algorithms/) | | |  
 | 109 | [Convert Sorted List to Binary Search Tree](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/description/) | [solution](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/solution/) | [C++](Algorithms/) | | |  
