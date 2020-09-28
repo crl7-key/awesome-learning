@@ -111,7 +111,7 @@
 | | | | | | |  
 | 115 | [Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/description/) | [无] | [C++](Algorithms/) | | |  
 | 116 | [Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/description/) | [无] | [C++](Algorithms/) | | | 
-| 117 | [Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/) | [无] | [C++](Algorithms/) | | |  
+| 117 | [Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/) | [无] | [C++](Algorithms/0117-Populating-Next-Right-Pointers-in-Each-Node-II/cpp-0117/) | | |  
 | 118 | [Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/description/) | [solution](https://leetcode.com/problems/pascals-triangle/solution/) | [C++](Algorithms/) | | |  
 | 119 | [Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii/description/) | [无] | [C++](Algorithms/) | | |  
 | 120 | [Triangle](https://leetcode.com/problems/triangle/description/) | [无] | [C++](Algorithms/) | | |  
@@ -350,6 +350,7 @@
 | | | | | | |  
 | 473 | [Matchsticks to Square](https://leetcode.com/problems/matchsticks-to-square/description/) | [solution](https://leetcode.com/problems/matchsticks-to-square/solution/) | [C++](Algorithms/) | | |  
 | 474 | [Ones and Zeroes](https://leetcode.com/problems/ones-and-zeroes/description/) | [solution](https://leetcode.com/problems/ones-and-zeroes/solution/) | [C++](Algorithms/) | | |  
+| 475 | [Heaters](https://leetcode.com/problems/heaters/) | 无| [C++](Algorithms/0475-Heaters/cpp-0475)| | |  
 | | | | | | |  
 | 477 | [Total Hamming Distance](https://leetcode.com/problems/total-hamming-distance/) | [solution](https://leetcode.com/problems/total-hamming-distance/solution/)  | [C++](Algorithms/) | | |  
 | 478 | [Generate Random Point in a Circle](https://leetcode.com/problems/generate-random-point-in-a-circle/description/) | [solution](https://leetcode.com/problems/generate-random-point-in-a-circle/solution/) | [C++](Algorithms/) | | |  
