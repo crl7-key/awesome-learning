@@ -1066,6 +1066,8 @@
 | 1499 | [Max Value of Equation](https://leetcode.com/problems/max-value-of-equation/) | [无] | [C++](Alogrithms/) | | |    
 | 1550 | [Three Consecutive Odds](https://leetcode.com/problems/three-consecutive-odds/) | [无] | [C++](Algorithms/1550-Three-Consecutive-Odds/cpp-1550/) | | |   
 | | | | | | |  
+| 1600 | [Throne Inheritance](https://leetcode.com/problems/throne-inheritance/) | [无] | [C++](Algorithms/1600-Throne-Inheritance/cpp-1600/) | | |    
+
 
 
 
