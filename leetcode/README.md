@@ -1067,6 +1067,7 @@
 | 1550 | [Three Consecutive Odds](https://leetcode.com/problems/three-consecutive-odds/) | [无] | [C++](Algorithms/1550-Three-Consecutive-Odds/cpp-1550/) | | |   
 | | | | | | |  
 | 1600 | [Throne Inheritance](https://leetcode.com/problems/throne-inheritance/) | [无] | [C++](Algorithms/1600-Throne-Inheritance/cpp-1600/) | | |    
+| 1601 | [Maximum Number of Achievable Transfer Requests](https://leetcode.com/problems/maximum-number-of-achievable-transfer-requests/) | [无] | [C++](Algorithms/1601-Maximum-Number-of-Achievable-Transfer-Requests/cpp-1601/) | | |    
 
 
 
