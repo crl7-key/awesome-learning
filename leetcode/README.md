@@ -1075,7 +1075,7 @@
 | ID | Problem | Official<br/>Solution | C++ | Golang | Python |  
 | --- | --- | :---: | :---: | :---: | :---: |   
 | 03 | [数组中重复的数字](https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/) |[无] | [C++](剑指-Offer/剑指Offer-03-数组中重复的数字/cpp-03/)| | |    
-| | | | | | |    
+| 04 | [二维数组中的查找](https://leetcode-cn.com/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof/) |[无] | [C++](剑指-Offer/剑指Offer-04-二维数组中的查找/cpp-04) | | |    
   
 
 **[⬆ 返回顶部](#Problems)**
