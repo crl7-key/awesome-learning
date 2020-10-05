@@ -37,7 +37,7 @@
 | 037 | [Sudoku Solver](https://leetcode.com/problems/sudoku-solver/description/) | [solution](https://leetcode.com/problems/sudoku-solver/) | [C++](Algorithms/) | | |  
 | 038 | [Count and Say](https://leetcode.com/problems/count-and-say/description/) | [无] | [C++](Algorithms/) | | |  
 | 039 | [Combination Sum](https://leetcode.com/problems/combination-sum/description/) | [无] | [C++](Algorithms/) | | |  
-| 040 | [Combination Sum II](https://leetcode.com/problems/combination-sum-ii/description/) | [无] | [C++](Algorithms/) | | |  
+| 040 | [Combination Sum II](https://leetcode.com/problems/combination-sum-ii/description/) | [无] | [C++](Algorithms/0040-Combination-Sum-II/cpp-0040/) | | |  
 | 041 | [First Missing Positive](https://leetcode.com/problems/first-missing-positive/) | [solution](https://leetcode.com/problems/first-missing-positive/solution/) | [C++](Algorithms/) | | |  
 | 042 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/description/) | [solution](https://leetcode.com/problems/trapping-rain-water/solution/) | [C++](Algorithms/) | | |  
 | | | | | | |  
