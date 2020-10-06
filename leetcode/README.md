@@ -1077,7 +1077,10 @@
 | --- | --- | :---: | :---: | :---: | :---: |   
 | 03 | [数组中重复的数字](https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/) |[无] | [C++](剑指-Offer/剑指Offer-03-数组中重复的数字/cpp-03/)| | |    
 | 04 | [二维数组中的查找](https://leetcode-cn.com/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof/) |[无] | [C++](剑指-Offer/剑指Offer-04-二维数组中的查找/cpp-04) | | |    
-| 05 | [替换空格](https://leetcode-cn.com/problems/ti-huan-kong-ge-lcof/) | |[C++]| | |    
+| 05 | [替换空格](https://leetcode-cn.com/problems/ti-huan-kong-ge-lcof/) | |[C++](剑指-Offer/剑指Offer-05-替换空格/cpp-05/)| | |    
+| 06 | [从尾到头打印链表](https://leetcode-cn.com/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/) | |[C++](剑指-Offer/剑指Offer-06-从尾到头打印链表/cpp-06/)| | |  
+| 06 | [重建二叉树](https://leetcode-cn.com/problems/zhong-jian-er-cha-shu-lcof/) | |[C++](剑指-Offer/剑指Offer-07-重建二叉树/cpp-07)| | |    
+
 
 
 
