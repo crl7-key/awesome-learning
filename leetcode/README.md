@@ -536,6 +536,7 @@
 | 819 | [Most Common Word](https://leetcode.com/problems/most-common-word/description/) | [solution](https://leetcode.com/problems/most-common-word/solution/) | [C++](Algorithms/) | | |  
 | | | | | | |  
 | 827 | [Making A Large Island](https://leetcode.com/problems/making-a-large-island/) | [无] | [C++](Algorithms/) | | |  
+| 834 | [Sum of Distances in Tree](https://leetcode.com/problems/sum-of-distances-in-tree/)|[solution](https://leetcode.com/problems/sum-of-distances-in-tree/solution/) | [C++](Algorithms/0834-Sum-of-Distances-in-Tree/cpp-0834) | | |    
 | | | | | | |  
 | 841 | [Keys and Rooms](https://leetcode.com/problems/keys-and-rooms/description/) | [solution](https://leetcode.com/problems/keys-and-rooms/solution/) | [C++](Algorithms/) | | |  
 | | | | | | |  
