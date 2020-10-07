@@ -69,7 +69,7 @@
 | 072 | [Edit Distance](https://leetcode.com/problems/edit-distance/) | [solution](https://leetcode.com/problems/edit-distance/solution/) | [C++](Algorithms/) | | |  
 | 073 | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/description/) | [solution](https://leetcode.com/problems/set-matrix-zeroes/solution/) | [C++](Algorithms/) | | |  
 | 074 | [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/) | [无] | [C++](Algorithms/) | | |  
-| 075 | [Sort Colors](https://leetcode.com/problems/sort-colors/description/) | [solution](https://leetcode.com/problems/sort-colors/solution/) | [C++](Algorithms/) | | |  
+| 075 | [Sort Colors](https://leetcode.com/problems/sort-colors/description/) | [solution](https://leetcode.com/problems/sort-colors/solution/) | [C++](Algorithms/0075-Sort-Colors/cpp-0075) | | |  
 | 076 | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/description/) | [solution](https://leetcode.com/problems/minimum-window-substring/solution/) | [C++](Algorithms/) | | |  
 | 077 | [Combinations](https://leetcode.com/problems/combinations/description/) | [solution](https://leetcode.com/problems/combinations/solution/) | [C++](Algorithms/) | | |
 | 078 | [Subsets](https://leetcode.com/problems/subsets/) |[solution](https://leetcode.com/problems/subsets/solution/) | [C++](Algorithms/0078-Subsets/cpp-0078/)| | |  
