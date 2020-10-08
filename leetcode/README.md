@@ -268,7 +268,7 @@
 | 341 | [Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator/) | [无] | [C++](Algorithms/) | | |  
 | | | | | | |  
 | 343 | [Integer Break](https://leetcode.com/problems/integer-break/description/) | [无] | [C++](Algorithms/) | | |  
-| 344 | [Reverse String](https://leetcode.com/problems/reverse-string/description/) | [无] | [C++](Algorithms/) | | |  
+| 344 | [Reverse String](https://leetcode.com/problems/reverse-string/description/) | [solution](https://leetcode.com/problems/reverse-string/solution/) | [C++](Algorithms/0344-Reverse-String/cpp-0344) | | |  
 | 345 | [Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/description/) | [无] | [C++](Algorithms/) | | |  
 | 346 | [Moving Average from Data Stream](https://leetcode.com/problems/moving-average-from-data-stream/solution/) | [无] | [C++](Algorithms/) | | |  
 | 347 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/description/) | [solution](https://leetcode.com/problems/top-k-frequent-elements/solution/) | [C++](Algorithms/) | | |  
