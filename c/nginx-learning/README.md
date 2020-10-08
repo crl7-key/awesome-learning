@@ -30,11 +30,11 @@ Nginx源码分析，注解代码，帮助学习Nginx。
 
 
 ###### event目录:balloon:
-* [ngx_event.h](/nginx/src/event/ngx_event.h)  
-* [ngx_event.c](/nginx/src/event/ngx_event.c)  
-* [ngx_event_accept.c](/nginx/src/event/ngx_event_accept.c)  
-* [ngx_event_timer.c](/nginx/src/event/ngx_event_timer.c)  
-* [ngx_epoll_module.c](/nginx/src/event/modules/ngx_epoll_module.c)  
+* [ngx_event.h](nginx/src/event/ngx_event.h)  
+* [ngx_event.c](nginx/src/event/ngx_event.c)  
+* [ngx_event_accept.c](nginx/src/event/ngx_event_accept.c)  
+* [ngx_event_timer.c](nginx/src/event/ngx_event_timer.c)  
+* [ngx_epoll_module.c](nginx/src/event/modules/ngx_epoll_module.c)  
 
 
 ###### http目录:balloon:
@@ -96,13 +96,13 @@ Nginx源码分析，注解代码，帮助学习Nginx。
 * [ngx_process_cycle.c](nginx/src/os/unix/ngx_process_cycle.c)  
 
 ###### 事件机制:balloon:
-* [ngx_connection.h](/nginx/src/core/ngx_connection.h)  
-* [ngx_connection.c](/nginx/src/core/ngx_connection.c)  
-* [ngx_event.h](/nginx/src/event/ngx_event.h)  
-* [ngx_event.c](/nginx/src/event/ngx_event.c)  
-* [ngx_event_accept.c](/nginx/src/event/ngx_event_accept.c)  
-* [ngx_event_timer.c](/nginx/src/event/ngx_event_timer.c)  
-* [ngx_epoll_module.c](/nginx/src/event/modules/ngx_epoll_module.c)  
+* [ngx_connection.h](nginx/src/core/ngx_connection.h)  
+* [ngx_connection.c](nginx/src/core/ngx_connection.c)  
+* [ngx_event.h](nginx/src/event/ngx_event.h)  
+* [ngx_event.c](nginx/src/event/ngx_event.c)  
+* [ngx_event_accept.c](nginx/src/event/ngx_event_accept.c)  
+* [ngx_event_timer.c](nginx/src/event/ngx_event_timer.c)  
+* [ngx_epoll_module.c](nginx/src/event/modules/ngx_epoll_module.c)  
 
 ###### 多线程机制:balloon:
 * [ngx_event.h](nginx/src/event/ngx_event.h)  
