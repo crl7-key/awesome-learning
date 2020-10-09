@@ -18,16 +18,27 @@
 
 #define NGX_TIMER_LAZY_DELAY  300
 
-
+// 初始化定时器,实际上就是初始化一个红黑树结构, 注意树的插入函数是ngx_rbtree_insert_timer_value
 ngx_int_t ngx_event_timer_init(ngx_log_t *log);
-ngx_msec_t ngx_event_find_timer(void);
-void ngx_event_expire_timers(void);
-ngx_int_t ngx_event_no_timers_left(void);
 
+// 在红黑树里查找最小值,即最左边的节点,得到超时的时间差值
+// 如果时间已经超过了,那么时间差值就是0,意味着在红黑树里已经有事件超时了，必须立即处理
+//
+// timer > 0  红黑树里即将超时的事件的时间
+// timer < 0  表示红黑树为空，即无超时事件
+// timer == 0 意味着在红黑树里已经有事件超时了,必须立即处理
+// timer == 0 epoll就不会等待,收集完事件立即返回
+ngx_msec_t ngx_event_find_timer(void);
+
+// 遍历定时器红黑树,找出所有过期的事件,调用handler处理超时
+void ngx_event_expire_timers(void);
+
+// 检查红黑树里是否还有定时器
+ngx_int_t ngx_event_no_timers_left(void);
 
 extern ngx_rbtree_t  ngx_event_timer_rbtree;
 
-
+// 删除定时器 
 static ngx_inline void
 ngx_event_del_timer(ngx_event_t *ev)
 {
@@ -46,7 +57,7 @@ ngx_event_del_timer(ngx_event_t *ev)
     ev->timer_set = 0;
 }
 
-
+// 添加定时器
 static ngx_inline void
 ngx_event_add_timer(ngx_event_t *ev, ngx_msec_t timer)
 {
@@ -55,7 +66,7 @@ ngx_event_add_timer(ngx_event_t *ev, ngx_msec_t timer)
 
     key = ngx_current_msec + timer;
 
-    if (ev->timer_set) {
+    if (ev->timer_set) { //如果之前该ev已经添加过，则先把之前的ev定时器del掉，然后在重新添加
 
         /*
          * Use a previous timer value if difference between it and a new
@@ -81,6 +92,7 @@ ngx_event_add_timer(ngx_event_t *ev, ngx_msec_t timer)
                    "event timer add: %d: %M:%M",
                     ngx_event_ident(ev->data), timer, ev->timer.key);
 
+    // 上树
     ngx_rbtree_insert(&ngx_event_timer_rbtree, &ev->timer);
 
     ev->timer_set = 1;
