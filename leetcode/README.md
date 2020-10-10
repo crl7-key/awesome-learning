@@ -134,7 +134,7 @@
 | 138 | [Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/description/) | [solution](https://leetcode.com/problems/copy-list-with-random-pointer/solution/) | [C++](Algorithms/) | | |  
 | | | | | | |  
 | 141 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/description/) | [solution](https://leetcode.com/problems/linked-list-cycle/solution/) | [C++](Algorithms/0141-Linked-List-Cycle/cpp-0141) |[Go](Algorithms/0141-Linked-List-Cycle/go-0141)| |  
-| 142 | [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/description/) | [solution](https://leetcode.com/problems/linked-list-cycle-ii/description/) | [C++](Algorithms/0142-Linked-List-Cycle-II/cpp-0142g) | | |  
+| 142 | [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/description/) | [solution](https://leetcode.com/problems/linked-list-cycle-ii/description/) | [C++](Algorithms/0142-Linked-List-Cycle-II/cpp-0142) | | |  
 | 143 | [Reorder List](https://leetcode.com/problems/reorder-list/) | [无] | [C++](Algorithms/) | | |  
 | 144 | [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/description/) | [solution](https://leetcode.com/problems/binary-tree-preorder-traversal/) | [C++](Algorithms/) | | |  
 | 145 | [Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/description/) | [solution](https://leetcode.com/problems/binary-tree-postorder-traversal/solution/) | [C++](Algorithms/0145-Binary-Tree-Postorder-Traversal/cpp-0145/) | | |  
