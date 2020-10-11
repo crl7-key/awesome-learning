@@ -378,7 +378,7 @@
 | | | | | | |  
 | 528 | [Random Pick with Weight](https://leetcode.com/problems/random-pick-with-weight/description/) | [solution](https://leetcode.com/problems/random-pick-with-weight/solution/) | [C++](Algorithms/) | | |  
 | 529 | [Minesweeper](https://leetcode.com/problems/minesweeper/) | [无] | [C++](Algorithms/) | | |  
-| 530 | [Minimum Absolute Difference in BST](https://leetcode.com/problems/minimum-absolute-difference-in-bst/description/) | [无] | | | |  
+| 530 | [Minimum Absolute Difference in BST](https://leetcode.com/problems/minimum-absolute-difference-in-bst/description/) | [无] | [C++](Algorithms/0530-Minimum-Absolute-Difference-in-BST/cpp-0530/) | | |  
 | | | | | | |  
 | 538 | [Convert BST to Greater Tree](https://leetcode.com/problems/convert-bst-to-greater-tree/) | [solution](https://leetcode.com/problems/convert-bst-to-greater-tree/solution/) | [C++](Algorithms/0538-Convert-BST-to-Greater-Tree/cpp-0538/) | | |   
 | 541 | [Reverse String II](https://leetcode.com/problems/reverse-string-ii/description/) | [solution](https://leetcode.com/problems/reverse-string-ii/solution/) | [C++](Algorithms/) | | |  
