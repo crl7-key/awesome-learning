@@ -1069,7 +1069,8 @@
 | | | | | | |  
 | 1600 | [Throne Inheritance](https://leetcode.com/problems/throne-inheritance/) | [无] | [C++](Algorithms/1600-Throne-Inheritance/cpp-1600/) | | |    
 | 1601 | [Maximum Number of Achievable Transfer Requests](https://leetcode.com/problems/maximum-number-of-achievable-transfer-requests/) | [无] | [C++](Algorithms/1601-Maximum-Number-of-Achievable-Transfer-Requests/cpp-1601/) | | |    
-
+| | | | | | |   
+| 1603 [Design Parking System](https://leetcode.com/problems/design-parking-system/)|[无]| [C++](Algorithms/1603-Design-Parking-System/cpp-1603/) | | | |   
 
 ## 剑指Offer
 
