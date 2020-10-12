@@ -65,7 +65,7 @@ int main()
    std::cout << '\n';
    // ouput :   1 1 1 1 1 1 1 1 1 1
    
-   vector<int> res(v.size(),0);
+   std::vector<int> res(v.size(),0);
    std::adjacent_difference(v.begin(), v.end(), res.begin(),  std::plus<> {});  // std::plus<>{} defined in header <functional>
    for (auto n : res)
         std::cout << n << ' ';
