@@ -1070,7 +1070,10 @@
 | 1600 | [Throne Inheritance](https://leetcode.com/problems/throne-inheritance/) | [无] | [C++](Algorithms/1600-Throne-Inheritance/cpp-1600/) | | |    
 | 1601 | [Maximum Number of Achievable Transfer Requests](https://leetcode.com/problems/maximum-number-of-achievable-transfer-requests/) | [无] | [C++](Algorithms/1601-Maximum-Number-of-Achievable-Transfer-Requests/cpp-1601/) | | |    
 | | | | | | |   
-| 1603 [Design Parking System](https://leetcode.com/problems/design-parking-system/)|[无]| [C++](Algorithms/1603-Design-Parking-System/cpp-1603/) | | | |   
+| 1603 | [Design Parking System](https://leetcode.com/problems/design-parking-system/)|[无]| [C++](Algorithms/1603-Design-Parking-System/cpp-1603/) | | |    
+| 1604 | [Alert Using Same Key-Card Three or More Times in a One Hour Period](https://leetcode.com/problems/alert-using-same-key-card-three-or-more-times-in-a-one-hour-period/) | [无] | [C++](Algorithms/1604-Alert-Using-Same-Key-Card-Three-or-More-Times-in-a-One-Hour-Period/cpp-1604) | | |   
+
+
 
 ## 剑指Offer
 
