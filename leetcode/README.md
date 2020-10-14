@@ -688,7 +688,7 @@
 | 999 | [Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook/) | [无] | [C++](Algorithms/) | | |  
 | 1000 | [Minimum Cost to Merge Stones](https://leetcode.com/problems/minimum-cost-to-merge-stones/) | [无] | [C++](Algorithms/) | | |  
 | 1001 | [Grid Illumination](https://leetcode.com/problems/grid-illumination/) | [无] | [C++](Algorithms/) | | |  
-| 1002 | [Find Common Characters](https://leetcode.com/problems/find-common-characters/) | [无] | [C++](Algorithms/) | | |  
+| 1002 | [Find Common Characters](https://leetcode.com/problems/find-common-characters/) | [无] | [C++](Algorithms/1002-Find-Common-Characters/cpp-1002) | | |  
 | 1003 | [Check If Word Is Valid After Substitutions](https://leetcode.com/problems/check-if-word-is-valid-after-substitutions/) | [无] | [C++](Algorithms/) | | |  
 | 1004 | [Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/) | [无] | [C++](Algorithms/) | | |  
 | 1005 | [Maximize Sum Of Array After K Negations](https://leetcode.com/problems/maximize-sum-of-array-after-k-negations/) | [无] | [C++](Algorithms/) | | |  
@@ -1070,7 +1070,10 @@
 | 1600 | [Throne Inheritance](https://leetcode.com/problems/throne-inheritance/) | [无] | [C++](Algorithms/1600-Throne-Inheritance/cpp-1600/) | | |    
 | 1601 | [Maximum Number of Achievable Transfer Requests](https://leetcode.com/problems/maximum-number-of-achievable-transfer-requests/) | [无] | [C++](Algorithms/1601-Maximum-Number-of-Achievable-Transfer-Requests/cpp-1601/) | | |    
 | | | | | | |   
-| 1603 [Design Parking System](https://leetcode.com/problems/design-parking-system/)|[无]| [C++](Algorithms/1603-Design-Parking-System/cpp-1603/) | | | |   
+| 1603 | [Design Parking System](https://leetcode.com/problems/design-parking-system/)|[无]| [C++](Algorithms/1603-Design-Parking-System/cpp-1603/) | | |    
+| 1604 | [Alert Using Same Key-Card Three or More Times in a One Hour Period](https://leetcode.com/problems/alert-using-same-key-card-three-or-more-times-in-a-one-hour-period/) | [无] | [C++](Algorithms/1604-Alert-Using-Same-Key-Card-Three-or-More-Times-in-a-One-Hour-Period/cpp-1604) | | |   
+
+
 
 ## 剑指Offer
 
