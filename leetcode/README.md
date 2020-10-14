@@ -688,7 +688,7 @@
 | 999 | [Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook/) | [无] | [C++](Algorithms/) | | |  
 | 1000 | [Minimum Cost to Merge Stones](https://leetcode.com/problems/minimum-cost-to-merge-stones/) | [无] | [C++](Algorithms/) | | |  
 | 1001 | [Grid Illumination](https://leetcode.com/problems/grid-illumination/) | [无] | [C++](Algorithms/) | | |  
-| 1002 | [Find Common Characters](https://leetcode.com/problems/find-common-characters/) | [无] | [C++](Algorithms/) | | |  
+| 1002 | [Find Common Characters](https://leetcode.com/problems/find-common-characters/) | [无] | [C++](Algorithms/1002-Find-Common-Characters/cpp-1002) | | |  
 | 1003 | [Check If Word Is Valid After Substitutions](https://leetcode.com/problems/check-if-word-is-valid-after-substitutions/) | [无] | [C++](Algorithms/) | | |  
 | 1004 | [Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/) | [无] | [C++](Algorithms/) | | |  
 | 1005 | [Maximize Sum Of Array After K Negations](https://leetcode.com/problems/maximize-sum-of-array-after-k-negations/) | [无] | [C++](Algorithms/) | | |  
