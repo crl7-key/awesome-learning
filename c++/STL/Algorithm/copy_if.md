@@ -16,7 +16,8 @@ constexpr OutputIt copy_if( InputIt first, InputIt last,
 ```
 
 ## 作用
- 将[first,last）如果值满足特定条件,则将[first,last）定义的范围内的元素复制到另一个从传递的参数开始的范围内,即复制范围的某些元素,第四个参数为自定义一元函数满足特定条件。  
+ 如果值满足特定条件,则将[first,last）定义的范围内的元素复制到另一个从传递的参数开始的范围内,即复制范围的某些元素,第四个参数为自定义一元函数满足特定条件。    
+ 
  ```cpp
 template<class InputIt, class OutputIt, class UnaryPredicate>
 OutputIt copy_if(InputIt first, InputIt last, 
