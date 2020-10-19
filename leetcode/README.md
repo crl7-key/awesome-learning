@@ -6,7 +6,7 @@
 | --- | --- | :---: | :---: | :---: | :---: |
 | 001 | [Two Sum](https://leetcode.com/problems/two-sum/description/) | [solution](https://leetcode.com/problems/two-sum/solution/) | [C++](Algorithms/0001-Two-Sum/cpp-0001/) | | |  
 | 002 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/) | [solution](https://leetcode.com/problems/add-two-numbers/solution/) | [C++](Algorithms/0002-Add-Two-Numbers/cpp-0002/) | | |  
-| 003 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/) | [solution](https://leetcode.com/problems/longest-substring-without-repeating-characters/solution/) | [C++](Alogrithms/) | | |    
+| 003 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/) | [solution](https://leetcode.com/problems/longest-substring-without-repeating-characters/solution/) | [C++](Algorithms/0003-Longest-Substring-Without-Repeating-Characters/cpp-0003/) | | |    
 | 004 | [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/) | [solution](https://leetcode.com/problems/median-of-two-sorted-arrays/solution/) | [C++](Algorithms/) | | |  
 | 005 | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) | [solution](https://leetcode.com/problems/longest-palindromic-substring/solution/) | [C++](Algorithms/) | | |   
 | 007 | [Reverse Integer](https://leetcode.com/problems/reverse-integer/description/) | [solution](https://leetcode.com/problems/reverse-integer/solution/) | [C++](Algorithms/) | | |  
@@ -540,6 +540,7 @@
 | | | | | | |  
 | 841 | [Keys and Rooms](https://leetcode.com/problems/keys-and-rooms/description/) | [solution](https://leetcode.com/problems/keys-and-rooms/solution/) | [C++](Algorithms/) | | |  
 | | | | | | |  
+| 844 | [Backspace String Compare](https://leetcode.com/problems/backspace-string-compare/) | [无](https://leetcode.com/problems/backspace-string-compare/solution/)| [C++](Algorithms/0844-Backspace-String-Compare/cpp-0844) | | |  
 | 852 | [Peak Index in a Mountain Array](https://leetcode.com/problems/peak-index-in-a-mountain-array/description/) | [solution](https://leetcode.com/problems/peak-index-in-a-mountain-array/solution/) | [C++](Algorithms/) | | |  
 | 853 | [Car Fleet](https://leetcode.com/problems/car-fleet/description/) | [solution](https://leetcode.com/problems/car-fleet/solution/) | [C++](Algorithms/) | | |  
 | 854 | [K-Similar Strings](https://leetcode.com/problems/k-similar-strings/description/) | [solution](https://leetcode.com/problems/k-similar-strings/solution/) | [C++](Algorithms/) | | |  
