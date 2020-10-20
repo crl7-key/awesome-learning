@@ -34,7 +34,7 @@ constexpr InputIt find(InputIt first, InputIt last, const T& value)
  ```cpp
 int main()
 {
-    sstd::vector<int> v{ 1, 2, 3, 4, 4, 3, 7, 8, 9, 10 };
+    std::vector<int> v{ 1, 2, 3, 4, 4, 3, 7, 8, 9, 10 };
 
     int searchme = 4;
     if(std::find(std::begin(v), std::end(v), searchme) != std::end(v)){
