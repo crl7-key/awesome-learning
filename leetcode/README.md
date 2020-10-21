@@ -614,7 +614,7 @@
 | 922 | [Sort Array By Parity II](https://leetcode.com/problems/sort-array-by-parity-ii/description/) | [solution](https://leetcode.com/problems/sort-array-by-parity-ii/solution/) | [C++](Algorithms/) | | |  
 | 923 | [3Sum With Multiplicity](https://leetcode.com/problems/3sum-with-multiplicity/description/) | [solution](https://leetcode.com/problems/3sum-with-multiplicity/solution/) | [C++](Algorithms/) | | |  
 | 924 | [Minimize Malware Spread](https://leetcode.com/problems/minimize-malware-spread/description/) | [solution](https://leetcode.com/problems/minimize-malware-spread/solution/) | [C++](Algorithms/) | | |  
-| 925 | [Long Pressed Name](https://leetcode.com/problems/long-pressed-name/submissions/) | [solution](https://leetcode.com/problems/long-pressed-name/solution/) | [C++](Algorithms/) | | |  
+| 925 | [Long Pressed Name](https://leetcode.com/problems/long-pressed-name/submissions/) | [solution](https://leetcode.com/problems/long-pressed-name/solution/) | [C++](Algorithms/0925-Long-Pressed-Name/cpp-0925) | | |  
 | 926 | [Flip String to Monotone Increasing](https://leetcode.com/problems/flip-string-to-monotone-increasing/) | [solution](https://leetcode.com/problems/flip-string-to-monotone-increasing/solution/) | [C++](Algorithms/) | | |  
 | 927 | [Three Equal Parts](https://leetcode.com/problems/three-equal-parts/) | [solution](https://leetcode.com/problems/three-equal-parts/solution/) | [C++](Algorithms/) | | | 
 | 928 | [Minimize Malware Spread II](https://leetcode.com/problems/minimize-malware-spread-ii/description/) | [solution](https://leetcode.com/problems/minimize-malware-spread-ii/solution/) | [C++](Algorithms/) | | |  
