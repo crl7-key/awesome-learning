@@ -2,7 +2,7 @@
 
 ## 头文件
 ```cpp
-#include <numeric>
+#include <algorithm>
 ```
 
 ## 函数原型:
