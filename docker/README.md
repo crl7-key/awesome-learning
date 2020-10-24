@@ -9,7 +9,13 @@ Docker的思想来自集装箱,即隔离,打包装箱,每个箱子都是互相�
 * [Docker 架构](#Docker-架构) 
 * [Docker 的安装](#Docker-的安装) 
 * [Docker 原理](#Docker-原理) 
-* [Docker 命令](#Docker-命令)  
+* [Docker 命令](#Docker-命令) 
+* [Docker 镜像使用](#Docker-镜像使用) 
+    - [列出镜像列表](#列出镜像列表)
+    - [获取镜像](#获取镜像)
+    - [查找镜像](#查找镜像)
+    - [删除镜像](#删除镜像)
+    - [设置镜像标签](#设置镜像标签) 
 * [Docker 容器使用](#Docker-容器使用)  
     - [容器内运行应用程序](#容器内运行应用程序)
     - [启动容器 运行交互式的容器](#启动容器-运行交互式的容器)
@@ -22,12 +28,6 @@ Docker的思想来自集装箱,即隔离,打包装箱,每个箱子都是互相�
     - [导入容器](#导入容器)
     - [删除容器](#删除容器)
     - [查询最后一次创建的容器](#查询最后一次创建的容器)
-* [Docker 镜像使用](#Docker-镜像使用) 
-    - [列出镜像列表](#列出镜像列表)
-    - [获取镜像](#获取镜像)
-    - [查找镜像](#查找镜像)
-    - [删除镜像](#删除镜像)
-    - [设置镜像标签](#设置镜像标签)
 
 
 ## Docker的应用场景
@@ -95,6 +95,107 @@ $ docker --help
   version     显示docker版本信息
   info        显示docker的系统信息
 ```
+
+## Docker 镜像使用
+
+### 列出镜像列表
+> docker image COMMAND   
+可以使用`docker images`来列出本地主机上的镜像
+```shell
+docker images
+
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+ubuntu              latest              d70eaf7277ea        21 hours ago        72.9MB
+hello-world         latest              bf756fb1ae65        9 months ago        13.3kB
+```
+
+各个选项说明:
+- `REPOSITORY`：表示镜像的仓库源  
+- `TAG`：镜像的标签    
+- `IMAGE ID`：镜像ID    
+- `CREATED`：镜像创建时间    
+- `SIZE`：镜像大小   
+
+```shell
+docker images --help
+```
+可选项:
+```
+ -a, --all              显示所有镜像
+      --digests         Show digests
+  -f, --filter filter   Filter output based on conditions provided
+      --format string   Pretty-print images using a Go template
+      --no-trunc        Don't truncate output
+  -q, --quiet           只显示镜像id
+```
+
+### 获取镜像
+>  docker pull [OPTIONS] NAME[:TAG|@DIGEST]
+   
+可以使用`docker pull imageName`命令获取镜像   
+例如：  
+使用`docker pull`命令来载入`ubuntu`镜像：  
+```shell
+docker pull ubuntu  
+```
+
+可选项:
+```
+--all-tags , -a		下载存储库中所有标记的图像
+--disable-content-trust	true	Skip image verification
+--platform		experimental (daemon)API 1.32+
+Set platform if server is multi-platform capable
+--quiet , -q		禁止详细输出,只显示镜像id
+```
+
+### 查找镜像
+> docker search [OPTIONS] TERM      
+
+可以从`Docker Hub`[网站](https://hub.docker.com/)来搜索镜像
+
+```shell
+docker search httpd
+```
+
+- `NAME`: 镜像仓库源的名称  
+- `DESCRIPTION`: 镜像的描述  
+- `OFFICIAL`: 是否`docker`官方发布    
+- `stars`: 类似`Github`里面的`star`,表示点赞、喜欢的意思。    
+- `AUTOMATED`: 自动构建。
+
+可选项：
+```
+  -f, --filter filter   Filter output based on conditions provided
+      --format string   Pretty-print search using a Go template
+      --limit int       Max number of search results (default 25)
+      --no-trunc        Don't truncate output
+```
+例如：
+```
+docker search mysql --filter=stars=3000 #从Docker Hub搜索stars量大于3000的镜像
+```
+
+### 删除镜像
+> docker rmi [OPTIONS] IMAGE [IMAGE...]   
+镜像删除使用`docker rmi`命令,比如我们删除`hello-world`镜像：
+```shell
+docker rmi -f hello-world
+```
+
+可选项:
+```
+  -f, --force      强制删除
+      --no-prune   Do not delete untagged parents
+```
+
+### 设置镜像标签
+> docker tag SOURCE_IMAGE[:TAG] TARGET_IMAGE[:TAG]   
+
+可以使用`docker tag`命令,为镜像添加一个新的标签
+```shell
+docker tag 0e5574283393 fedora/httpd:version1.0
+```
+
 
 ## Docker 容器使用
 
@@ -218,67 +319,6 @@ docker rm -f 163ea2389e3f
 
 
 
-## Docker 镜像使用
-
-### 列出镜像列表
-> docker image COMMAND   
-可以使用`docker images`来列出本地主机上的镜像
-```shell
-docker images
-
-REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
-ubuntu              latest              d70eaf7277ea        21 hours ago        72.9MB
-hello-world         latest              bf756fb1ae65        9 months ago        13.3kB
-```
-
-各个选项说明:
-- `REPOSITORY`：表示镜像的仓库源  
-- `TAG`：镜像的标签    
-- `IMAGE ID`：镜像ID    
-- `CREATED`：镜像创建时间    
-- `SIZE`：镜像大小   
-
-
-
-### 获取镜像
-
-可以使用`docker pull imageName`命令获取镜像   
-例如：  
-使用`docker pull`命令来载入`ubuntu`镜像：  
-```shell
-docker pull ubuntu  
-```
-
-
-### 查找镜像
-> docker search [OPTIONS] TERM    
-可以从`Docker Hub`[网站](https://hub.docker.com/)来搜索镜像
-
-```shell
-docker search httpd
-```
-
-- `NAME`: 镜像仓库源的名称  
-- `DESCRIPTION`: 镜像的描述  
-- `OFFICIAL`: 是否`docker`官方发布    
-- `stars`: 类似`Github`里面的`star`,表示点赞、喜欢的意思。    
-- `AUTOMATED`: 自动构建。
-
-
-### 删除镜像
-> docker rmi [OPTIONS] IMAGE [IMAGE...]   
-镜像删除使用`docker rmi`命令,比如我们删除`hello-world`镜像：
-```shell
-docker rmi hello-world
-```
-
-
-### 设置镜像标签
-> docker tag SOURCE_IMAGE[:TAG] TARGET_IMAGE[:TAG]   
-可以使用`docker tag`命令,为镜像添加一个新的标签
-```shell
-docker tag 0e5574283393 fedora/httpd:version1.0
-```
 
 
 **[⬆ 返回顶部](#目录)**
