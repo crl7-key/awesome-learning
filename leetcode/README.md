@@ -541,6 +541,7 @@
 | 841 | [Keys and Rooms](https://leetcode.com/problems/keys-and-rooms/description/) | [solution](https://leetcode.com/problems/keys-and-rooms/solution/) | [C++](Algorithms/) | | |  
 | | | | | | |  
 | 844 | [Backspace String Compare](https://leetcode.com/problems/backspace-string-compare/) | [无](https://leetcode.com/problems/backspace-string-compare/solution/)| [C++](Algorithms/0844-Backspace-String-Compare/cpp-0844) | | |  
+| 845 | [Longest Mountain in Array](https://leetcode.com/problems/longest-mountain-in-array/) | [solution](https://leetcode.com/problems/longest-mountain-in-array/solution/) | [C++](Algorithms/0845-Longest-Mountain-in-Array/cpp-0845) | | |    
 | 852 | [Peak Index in a Mountain Array](https://leetcode.com/problems/peak-index-in-a-mountain-array/description/) | [solution](https://leetcode.com/problems/peak-index-in-a-mountain-array/solution/) | [C++](Algorithms/) | | |  
 | 853 | [Car Fleet](https://leetcode.com/problems/car-fleet/description/) | [solution](https://leetcode.com/problems/car-fleet/solution/) | [C++](Algorithms/) | | |  
 | 854 | [K-Similar Strings](https://leetcode.com/problems/k-similar-strings/description/) | [solution](https://leetcode.com/problems/k-similar-strings/solution/) | [C++](Algorithms/) | | |  
