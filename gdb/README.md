@@ -11,7 +11,7 @@
     - [调试执行异常崩溃的程序](#调试执行异常崩溃的程序)
 * [GDB调试器启动可用参数](#GDB调试器启动可用参数)  
 
-![image](image/gdb调试.png) 
+![gdb](image/gdb.png) 
 
 ### GDB是什么？
 `GDB`全称`“GNU symbolic debugger”`,它诞生于`GNU`计划（同时诞生的还有`GCC`、`Emacs`等,是`Linux`下常用的程序调试器.
