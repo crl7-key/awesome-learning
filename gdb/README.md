@@ -9,8 +9,9 @@
     - [调试尚未执行的程序](#调试尚未执行的程序)
     - [调试正在执行的程序](#调试正在执行的程序)
     - [调试执行异常崩溃的程序](#调试执行异常崩溃的程序)
+* [GDB调试器启动可用参数](#GDB调试器启动可用参数)  
 
-![image](image/gdb调试.jpg) 
+![image](image/gdb调试.png) 
 
 ### GDB是什么？
 `GDB`全称`“GNU symbolic debugger”`,它诞生于`GNU`计划（同时诞生的还有`GCC`、`Emacs`等,是`Linux`下常用的程序调试器.
@@ -27,7 +28,9 @@
 root@MacBook-Pro ~ %  gdb
 ```
 由于此方式启动的`GDB`调试器事先未指定要调试的具体程序,因此需启动后借助`file`或者`exec-file`命令指定   
-
+```
+(gdb) file /tmp/demo/main.exe
+```
 
 #### 调试尚未执行的程序
 对于具备调试信息（使用`-g`选项编译而成）的可执行文件,调用`GDB`调试器的指令格式为：
@@ -103,7 +106,35 @@ gdb program core
 gdb test core
 ```
 
+#### GDB调试器启动可用参数
+调试进程`ID`为`number`的程序:
+```
+gdb -pid number
+gdb -p number
+```
 
+从指定`file`文件中读取符号表:
+```
+gdb -symbols file
+gdb -s file
+```
+
+取消启动`GDB`调试器时打印的介绍信息和版权信息:
+```
+gdb -q
+gdb -quiet
+gdb -silent
+```
+
+以`directory`作为启动`GDB`调试器的工作目录,而非当前所在目录:
+```
+gdb -cd directory
+```
+
+向可执行文件传递执行所需要的参数:
+```
+gdb --args 参数1 参数2...
+```
 
 
 **[⬆ 返回顶部](#目录)**
