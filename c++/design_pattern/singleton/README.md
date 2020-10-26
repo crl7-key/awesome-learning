@@ -96,7 +96,7 @@ Singleton Constructor
 class Singleton
 {
 public:
-    static *GetInstance()const {
+    static Singleton* GetInstance(){
         if(m_instance == nullptr) {
             m_instance = new Singleton;
         }      
@@ -115,7 +115,7 @@ Singleton* Singleton::m_instance = nullptr;
 class Singleton
 {
 public:
-    static *GetInstance()const {    
+    static Singleton* GetInstance(){    
         return m_instance;
     }
 
@@ -132,21 +132,22 @@ Singleton* Singleton::m_instance = new Singleton;
 class Singleton
 {
 public:
-    static *GetInstance()const {
-        mutex.lock();
+    static Singleton* GetInstance() {
+        m_lock.lock();
         if(m_instance == nullptr) {
             m_instance = new Singleton;
         }      
-        mutex.unlock();    
+        m_lock.unlock();    
         return m_instance;
     }   
 
- private:
+private:
     static Singleton *m_instance;
+    static mutex m_lock;
 };
 Singleton* Singleton::m_instance = nullptr;
  ```
- 这种写法不会出现上面两个线程都执行到`m_instance == nullptr`里面的情况,当线程A在执行`m_instance = new Singleton`的时候,线程B如果调用了`GetInstance`,一定会被阻塞在加锁处,等待线程A执行结束后释放这个锁。从而是线程安全的。但是这种写法性能非常低下,因为每次调用instance()都会加锁释放锁，而这个步骤只有在第一次`new Singleton`才是有必要的，只要`m_instance`被创建出来了,不管多少线程同时访问，使用`if (m_instance == nullptr)` 进行判断都是足够的(只是读操作,不需要加锁),没有线程安全问题，加了锁之后反而存在性能问题。 因此引出`DCLP`(双重检查锁模式)
+ 这种写法不会出现上面两个线程都执行到`m_instance == nullptr`里面的情况,当线程A在执行`m_instance = new Singleton`的时候,线程B如果调用了`GetInstance`,一定会被阻塞在加锁处,等待线程A执行结束后释放这个锁。从而是线程安全的。但是这种写法性能非常低下,因为每次调用`GetInstance()`都会加锁释放锁，而这个步骤只有在第一次`new Singleton`才是有必要的，只要`m_instance`被创建出来了,不管多少线程同时访问，使用`if (m_instance == nullptr)` 进行判断都是足够的(只是读操作,不需要加锁),没有线程安全问题，加了锁之后反而存在性能问题。 因此引出`DCLP`(双重检查锁模式)
 
 
 ### 双重检查锁模式
@@ -155,19 +156,20 @@ Singleton* Singleton::m_instance = nullptr;
 class Singleton
 {
 public:
-    static *GetInstance()const {
+    static Singleton* GetInstance()const {
         if(m_instance == nullptr) { // 第一次检查
-            mutex.lock();
+            m_lock.lock();
             if(m_instance == nullptr) { // 第二次检查
                 m_instance = new Singleton;
             }
-            mutex.unlock();
+            m_lock.unlock();
         }
         return m_instance;
     }   
 
- private:
+private:
     static Singleton *m_instance;
+    static mutex m_lock;
 };
 Singleton* Singleton::m_instance = nullptr;
 ```
@@ -184,7 +186,7 @@ private:
     static Singleton *m_instance;
     static mutex m_lock;
 public:
-    Singleton *GetInstance() {
+    Singleton* GetInstance() {
         if (m_instance == nullptr) {
         lock_guard<mutex> guard(m_lock);
         if (m_instance == nullptr)
@@ -206,7 +208,7 @@ public:
 };
 
 Singleton *Singleton::m_instance = nullptr;
-Singleton::CGarbo m_Garbo; 
+Singleton::Garbo m_Garbo; 
 ```
 看起来上述代码非常美好,可是过了相当一段时间后,才发现这个漏洞,原因是：**内存读写的乱序执行(编译器问题)。**    
 
