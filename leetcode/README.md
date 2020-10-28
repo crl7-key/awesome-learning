@@ -123,7 +123,7 @@
 | 126 | [Word Ladder II](https://leetcode.com/problems/word-ladder-ii/description/) | [无] | [C++](Algorithms/) | | |  
 | 127 | [Word Ladder](https://leetcode.com/problems/word-ladder/description/) | [solution](https://leetcode.com/problems/word-ladder/solution/) | [C++](Algorithms/) | | |  
 | 128 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-9consecutive-sequence/description/) | | [C++](Algorithms/) | | |  
-| 129 | [Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/description/) | [无] | [C++](Algorithms/) | | |  
+| 129 | [Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/description/) | [solution](https://leetcode.com/problems/sum-root-to-leaf-numbers/solution/) | [C++](Algorithms/0129-Sum-Root-to-Leaf-Numbers/cpp-0129/) | | |  
 | 130 | [Surrounded Regions](https://leetcode.com/problems/surrounded-regions/description/) | [无] | [C++](Algorithms/) | | |  
 | | | | | | |  
 | 133 | [Clone Graph](https://leetcode.com/problems/clone-graph/description/) | [无] | [C++](Algorithms/) | | |  
