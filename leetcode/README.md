@@ -848,7 +848,7 @@
 | 1202 | [Smallest String With Swaps](https://leetcode.com/problems/smallest-string-with-swaps/) | [无] | [C++](Algorithms/) | | |  
 | 1203 | [Sort Items by Groups Respecting Dependencies](https://leetcode.com/problems/sort-items-by-groups-respecting-dependencies/) | [无] | [C++](Algorithms/) | | |  
 | | | | | | |  
-| 1207 | [Unique Number of Occurrences](https://leetcode.com/problems/unique-number-of-occurrences/) | [无] | [C++](Algorithms/) | | |  
+| 1207 | [Unique Number of Occurrences](https://leetcode.com/problems/unique-number-of-occurrences/) | [无] | [C++](Algorithms/1207-Unique-Number-of-Occurrences/cpp-1207/) | | |  
 | 1208 | [Get Equal Substrings Within Budget](https://leetcode.com/problems/get-equal-substrings-within-budget/) | [无] | [C++](Algorithms/) | | |  
 | 1209 | [Remove All Adjacent Duplicates in String II](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii/) | [无] | [C++](Algorithms/) | | |  
 | 1210 | [Minimum Moves to Reach Target with Rotations](https://leetcode.com/problems/minimum-moves-to-reach-target-with-rotations/) | [无] | [C++](Algorithms/) | | |  
