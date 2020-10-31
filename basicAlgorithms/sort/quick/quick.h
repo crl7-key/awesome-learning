@@ -1,0 +1,42 @@
+#ifndef INC_QUICK_SORT_H_
+#define INC_QUICK_SORT_H_
+
+#include "debug.h"
+#include <algorithm>
+
+//返回index,使得arr[left...index-1] < arr[index] <  arr[index+1...right];
+template<class T>
+int partition(T arr[],int left,int right) {
+    // 以首个元素(最左边的数)作为基准
+    T v = arr[left];
+    // arr[left+1...j] < v ; arr[j+1...i) > v, j为分割点
+    int j = left;   
+    for(int i = left +1;i <= right;i++) { // 当arr[i] > v ;i++ ,arr[i] < v; j++ 
+        if(arr[i] < v) {
+            j++;
+            std::swap(arr[j],arr[i]);
+        }
+    }
+    std::swap(arr[left],arr[j]);
+    return j;
+}
+
+//对arr[left...right]部分进行快速排序
+template<class T>
+void quickSort(T arr[],int left,int right) {
+    if (left >= right)
+        return;
+    
+    int base = partition(arr,left,right); // 分割点,寻找基准数据的正确索引
+    output(left,base,right,arr);
+    quickSort(arr,left,base -1);   // 对 < base的部分进行快速排序
+    quickSort(arr,base+1,right);   // 对 > base的部分进行快速排序
+
+}
+
+template<class T>
+void quick(T arr[],int n) {
+    quickSort(arr,0,n-1);
+}
+
+#endif // !INC_QUICK_SORT_H_
