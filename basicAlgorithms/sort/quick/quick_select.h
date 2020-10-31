@@ -3,7 +3,7 @@
 
 #include <algorithm>
 #include "debug.h"
-//返回index,使得arr[left...index-1] < arr[index]; arr[index] > arr[index+1...right];
+//返回index,使得arr[left...index-1] < arr[index] < arr[index+1...right];
 template<class T>
 int partition(T arr[],int left,int right) {
     // 以首个元素(最左边的数)作为基准
