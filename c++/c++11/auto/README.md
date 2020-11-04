@@ -37,7 +37,7 @@ std::cout << typeid(b).name() << std::endl;  // output : int*
 ```c++
 int a[3] = { 1, 2, 3 };
 auto & b = a;
-std::cout << typeid(b).name() << std::endl; // output::
+std::cout << typeid(b).name() << std::endl; // output: int[3]
 ```
 
 - 函数或者模板参数不能被声明为`auto`
