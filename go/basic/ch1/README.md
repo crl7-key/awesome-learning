@@ -1,5 +1,11 @@
 # Hello_world
 
+## 环境变量
+```
+GOROOT      指向GOLANG的安装目录
+GOPATH      指向GO第三方库所在路径,可以和GOROOT是同一个路径,在使用go get和 go install时会被引用
+```
+
 ```go
 package main // 包,表明代码所在的模块(包)
 
