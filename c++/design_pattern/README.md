@@ -7,7 +7,7 @@
 
 ## 目录
 * [设计模式的六大原则 Six principles](设计模式的六大原则-Six-principles)
-* [构建型模式](#构建型模式)
+* [构建型模式 Creational Patterns](#构构建型模式-Creational-Patterns)
 * [结构型模式 Structural Patterns](#结构型模式-Structural-Patterns)
 * [行为型模式 Behavioral Patterns](#行为型模式-Behavioral-Patterns)
 ![image](images/Design_Pattern.png)
