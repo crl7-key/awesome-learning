@@ -443,7 +443,10 @@ protoc --proto_path=IMPORT_PATH --cpp_out=DST_DIR --java_out=DST_DIR --python_ou
     ```
     protoc --proto_path=src --go_out=build/gen --go_opt=paths=source_relative src/foo.proto src/bar/baz.proto
     ```
+    例子：[在`golang`中使用`protobuf`](https://github.com/crl7-key/awesome-learning/tree/master/go/go%E5%AE%9E%E6%88%98/protobuf-go)
 - `Ruby`: 生成一个`.rb`文件的`Ruby`模块，包含所有消息类型
 - `JavaNano`: 类似`Java`，但不包含`Builder`类
 - `Objective-C`: 每个`.proto`文件生成一个`pbobjc.h`和一个`pbobjc.m`文件
 - `C#`: 生成`.cs`文件包含，每个消息类型对应一个类
+
+**[⬆ 返回顶部](#目录)**
