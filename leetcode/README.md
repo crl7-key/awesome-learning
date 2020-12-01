@@ -31,7 +31,7 @@
 | 028 | [Implement strStr()](https://leetcode.com/problems/implement-strstr/description/) | [无] | [C++](Algorithms/) | | |  
 | | | | | | |  
 | 033 | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/description/) | [solution](https://leetcode.com/problems/search-in-rotated-sorted-array/solution/) | [C++](Algorithms/) | | |  
-| 034 | [Search for a Range](https://leetcode.com/problems/search-for-a-range/description/) | [solution](https://leetcode.com/problems/search-for-a-range/solution/) | [C++](Algorithms/) | | |  
+| 034 | [Search for a Range](https://leetcode.com/problems/search-for-a-range/description/) | [solution](https://leetcode.com/problems/search-for-a-range/solution/) | [C++](Algorithms/0034-Find-First-and-Last-Position-of-Element-in-Sorted-Array/cpp-0034/) | | |  
 | | | | | | |  
 | 036 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/description/) | [solution](https://leetcode.com/problems/valid-sudoku/solution/) | [C++](Algorithms/) | | |  
 | 037 | [Sudoku Solver](https://leetcode.com/problems/sudoku-solver/description/) | [solution](https://leetcode.com/problems/sudoku-solver/) | [C++](Algorithms/) | | |  
@@ -128,7 +128,7 @@
 | 130 | [Surrounded Regions](https://leetcode.com/problems/surrounded-regions/description/) | [无] | [C++](Algorithms/) | | |  
 | | | | | | |  
 | 133 | [Clone Graph](https://leetcode.com/problems/clone-graph/description/) | [无] | [C++](Algorithms/) | | |  
-| 134 | [Gas Station](https://leetcode.com/problems/gas-station/) | [solution](https://leetcode.com/problems/gas-station/solution/) | [C++](Algorithms/) | | |  
+| 134 | [Gas Station](https://leetcode.com/problems/gas-station/) | [solution](https://leetcode.com/problems/gas-station/solution/) | [C++](Algorithms/0134-Gas-Station/cpp-0134/) | | |  
 | 135 | [Candy](https://leetcode.com/problems/candy/) | [solution](https://leetcode.com/problems/candy/solution/)| [C++](Algorithms/) | | |  
 | 136 | [Single Number](https://leetcode.com/problems/single-number/description/) | [solution](https://leetcode.com/problems/single-number/solution/) | [C++](Algorithms/) | | | 
 | | | | | | |  
@@ -721,7 +721,7 @@
 | 1027 | [Longest Arithmetic Sequence](https://leetcode.com/problems/longest-arithmetic-sequence/) | [无] | [C++](Algorithms/) | | |  
 | 1028 | [Recover a Tree From Preorder Traversal](https://leetcode.com/problems/recover-a-tree-from-preorder-traversal/) | [无] | [C++](Algorithms) | | |  
 | 1029 | [Two City Scheduling](https://leetcode.com/problems/two-city-scheduling/) | [无] | [C++](Algorithms/) | | |  
-| 1030 | [Matrix Cells in Distance Order](https://leetcode.com/problems/matrix-cells-in-distance-order/) | [无] | [C++](Algorithms/) | | |  
+| 1030 | [Matrix Cells in Distance Order](https://leetcode.com/problems/matrix-cells-in-distance-order/) | [无] | [C++](Algorithms/1030-Matrix-Cells-in-Distance-Order/cpp-1030/) | | |  
 | 1031 | [Maximum Sum of Two Non-Overlapping Subarrays](https://leetcode.com/problems/maximum-sum-of-two-non-overlapping-subarrays/) | [无] | [C++](Algorithms/) | | |  
 | 1032 | [Stream of Characters](https://leetcode.com/problems/stream-of-characters/) | [无] | [C++](Algorithms/) | | |  
 | 1033 | [Moving Stones Until Consecutive](https://leetcode.com/problems/moving-stones-until-consecutive/) | [无] | [C++](Algorithms/) | | |  
@@ -841,7 +841,8 @@
 | 1190 | [Reverse Substrings Between Each Pair of Parentheses](https://leetcode.com/problems/reverse-substrings-between-each-pair-of-parentheses/) | [无] | [C++](Algorithms/) | | |  
 | 1191 | [K-Concatenation Maximum Sum](https://leetcode.com/problems/k-concatenation-maximum-sum/) | [无] | [C++](Algorithms/) | | |  
 | 1192 | [Critical Connections in a Network](https://leetcode.com/problems/critical-connections-in-a-network/) | [无] | [C++](Algorithms/) | | |  
-| | | | | | |  
+| | | | | | | 
+| 1195 | [Fizz Buzz Multithreaded](https://leetcode.com/problems/fizz-buzz-multithreaded/) | [无]()| [C++](Concurrency/1195-Fizz-Buzz-Multithreaded/cpp-1195)) | | |    
 | 1196 | [How Many Apples Can You Put into the Basket](https://leetcode.com/problems/how-many-apples-can-you-put-into-the-basket/) | [无] | [C++](Algorithms/) | | |  
 | 1197 | [Minimum Knight Moves](https://leetcode.com/problems/minimum-knight-moves/) | [无] | [C++](Algorithms/) | | |  
 | 1198 | [Find Smallest Common Element in All Rows](https://leetcode.com/problems/find-smallest-common-element-in-all-rows/) | [无] | [C++](Algorithms/) | | |  
