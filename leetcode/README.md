@@ -44,7 +44,7 @@
 | 046 | [Permutations](https://leetcode.com/problems/permutations/description/) | [solution](https://leetcode.com/problems/permutations/solution/) | [C++](Algorithms/) | | |  
 | 047 | [Permutations II](https://leetcode.com/problems/permutations-ii/description/) | [无] | [C++](Algorithms/) | | |  
 | 048 | [Rotate Image](https://leetcode.com/problems/rotate-image/description/) | [solution](https://leetcode.com/problems/rotate-image/) | [C++](Algorithms/) | | |  
-| 049 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/description/) | [solution](https://leetcode.com/problems/group-anagrams/solution/) | [C++](Algorithms/) | | |  
+| 049 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/description/) | [solution](https://leetcode.com/problems/group-anagrams/solution/) | [C++](Algorithms/0049-Group-Anagrams/cpp-0049/) | | |  
 | 050 | [Pow(x, n)](https://leetcode.com/problems/powx-n/) | [无] | [C++](Algorithms/) | | |  
 | 051 | [N-Queens](https://leetcode.com/problems/n-queens/description/) | [无] | [C++](Algorithms/) | | |  
 | 052 | [N-Queens II](https://leetcode.com/problems/n-queens-ii/) | [solution](https://leetcode.com/problems/n-queens-ii/solution/) | [C++](Algorithms/) | | |  
