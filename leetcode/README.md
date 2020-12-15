@@ -481,7 +481,7 @@
 | 735 | [Asteroid Collision](https://leetcode.com/problems/asteroid-collision/description/) | [solution](https://leetcode.com/problems/asteroid-collision/solution/) | [C++](Algorithms/) | | |  
 | 736 | [Parse Lisp Expression](https://leetcode.com/problems/parse-lisp-expression/description/) | [solution](https://leetcode.com/problems/parse-lisp-expression/solution/) | [C++](Algorithms/) | | |  
 | 737 | [Sentence Similarity II](https://leetcode.com/problems/sentence-similarity-ii/description/) | [solution](https://leetcode.com/problems/sentence-similarity-ii/solution/) | [C++](Algorithms/) | | |  
-| | | | | | |  
+| 738| [Monotone Increasing Digits](https://leetcode.com/problems/monotone-increasing-digits/) | [solution](https://leetcode.com/problems/monotone-increasing-digits/solution/) | [C++](Algorithms/0738-Monotone-Increasing-Digits/cpp-0738)| | |  
 | 739 | [Daily Temperatures](https://leetcode.com/problems/daily-temperatures/description/) | [solution](https://leetcode.com/problems/daily-temperatures/solution/) | [C++](Algorithms/) | | |  
 | 740 | [Delete and Earn](https://leetcode.com/problems/delete-and-earn/description/) | [solution](https://leetcode.com/problems/delete-and-earn/solution/) | [C++](Algorithms/) | | |  
 | 741 | [Cherry Pickup](https://leetcode.com/problems/cherry-pickup/description/) | [solution](https://leetcode.com/problems/cherry-pickup/solution/) | [C++](Algorithms/) | | | 
