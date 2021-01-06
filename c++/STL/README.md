@@ -56,9 +56,8 @@
 <li><a href="Algorithm/merge.md"><code>merge</code></a></li>
 <li><a href="Algorithm/min.md"><code>min</code></a></li>
 <li><a href="Algorithm/min_element.md"><code>min_element</code></a></li>
-<li><a href="Algorithm/minimax_element.md"><code>minimax_element</code></a></li>
+<li><a href="Algorithm/minimax_element.md"><code>minmax_element</code></a></li>
 <li><a href="Algorithm/minmax.md"><code>minmax</code></a></li>
-<li><a href="Algorithm/minmax_element.md"><code>minmax_element</code></a></li>
 <li><a href="Algorithm/mismatch.md"><code>mismatch</code></a></li>
 <li><a href="Algorithm/move.md"><code>move</code></a></li>
 <li><a href="Algorithm/next_permutation.md"><code>next_permutation</code></a></li>
@@ -68,7 +67,6 @@
 <li><a href="Algorithm/pop_heap.md"><code>pop_heap</code></a></li>
 <li><a href="Algorithm/prev_permutation.md"><code>prev_permutation</code></a></li>
 <li><a href="Algorithm/push_heap.md"><code>push_heap</code></a></li>
-<li><a href="Algorithm/random_shuffle.md"><code>random_shuffle</code></a></li>
 <li><a href="Algorithm/remove.md"><code>remove</code></a></li>
 <li><a href="Algorithm/remove_copy.md"><code>remove_copy</code></a></li>
 <li><a href="Algorithm/remove_copy_if.md"><code>remove_copy_if</code></a></li>
