@@ -88,7 +88,6 @@
 <li><a href="Algorithm/stable_sort.md"><code>stable_sort</code></a></li>
 <li><a href="Algorithm/swap.md"><code>swap</code></a></li>
 <li><a href="Algorithm/transform.md"><code>transform</code></a></li>
-<li><a href="Algorithm/transform_reduce.md"><code>transform_reduce</code></a></li>
 <li><a href="Algorithm/unique.md"><code>unique</code></a></li>
 <li><a href="Algorithm/upper_bound.md"><code>upper_bound</code></a></li>
 </ol>
@@ -97,34 +96,34 @@
 ### List 
 <details><summary>View contents</summary>
 <ol>
-<li><a href="list/assign.md"><code>assign</code></a></li>
-<li><a href="list/back.md"><code>back</code></a></li>
-<li><a href="list/begin.md"><code>begin</code></a></li>
-<li><a href="list/cbegin.md"><code>cbegin</code></a></li>
-<li><a href="list/cend.md"><code>cend</code></a></li>
-<li><a href="list/clear.md"><code>clear</code></a></li>
-<li><a href="list/crbegin.md"><code>crbegin</code></a></li>
-<li><a href="list/crend.md"><code>crend</code></a></li>
-<li><a href="list/emplace.md"><code>emplace</code></a></li>
-<li><a href="list/emplace_back.md"><code>emplace_back</code></a></li>
-<li><a href="list/empty.md"><code>empty</code></a></li>
-<li><a href="list/end.md"><code>end</code></a></li>
-<li><a href="list/erase.md"><code>erase</code></a></li>
-<li><a href="list/front.md"><code>front</code></a></li>
-<li><a href="list/insert.md"><code>insert</code></a></li>
-<li><a href="list/max_size.md"><code>max_size</code></a></li>
-<li><a href="list/merge.md"><code>merge</code></a></li>
-<li><a href="list/pop_front.md"><code>pop_front</code></a></li>
-<li><a href="list/rbegin.md"><code>rbegin</code></a></li>
-<li><a href="list/remove.md"><code>remove</code></a></li>
-<li><a href="list/rend.md"><code>rend</code></a></li>
-<li><a href="list/resize.md"><code>resize</code></a></li>
-<li><a href="list/reverse.md"><code>reverse</code></a></li>
-<li><a href="list/size.md"><code>size</code></a></li>
-<li><a href="list/sort.md"><code>sort</code></a></li>
-<li><a href="list/splice.md"><code>splice</code></a></li>
-<li><a href="list/swap.md"><code>swap</code></a></li>
-<li><a href="list/unique.md"><code>unique</code></a></li>
+<li><a href="Container/sequence container/list/assign.md"><code>assign</code></a></li>
+<li><a href="Container/sequence container/list/back.md"><code>back</code></a></li>
+<li><a href="Container/sequence container/list/begin.md"><code>begin</code></a></li>
+<li><a href="Container/sequence container/list/cbegin.md"><code>cbegin</code></a></li>
+<li><a href="Container/sequence container/list/cend.md"><code>cend</code></a></li>
+<li><a href="Container/sequence container/list/clear.md"><code>clear</code></a></li>
+<li><a href="Container/sequence container/list/crbegin.md"><code>crbegin</code></a></li>
+<li><a href="Container/sequence container/list/crend.md"><code>crend</code></a></li>
+<li><a href="Container/sequence container/list/emplace.md"><code>emplace</code></a></li>
+<li><a href="Container/sequence container/list/emplace_back.md"><code>emplace_back</code></a></li>
+<li><a href="Container/sequence container/list/empty.md"><code>empty</code></a></li>
+<li><a href="Container/sequence container/list/end.md"><code>end</code></a></li>
+<li><a href="Container/sequence container/list/erase.md"><code>erase</code></a></li>
+<li><a href="Container/sequence container/list/front.md"><code>front</code></a></li>
+<li><a href="Container/sequence container/list/insert.md"><code>insert</code></a></li>
+<li><a href="Container/sequence container/list/max_size.md"><code>max_size</code></a></li>
+<li><a href="Container/sequence container/list/merge.md"><code>merge</code></a></li>
+<li><a href="Container/sequence container/list/pop_front.md"><code>pop_front</code></a></li>
+<li><a href="Container/sequence container/list/rbegin.md"><code>rbegin</code></a></li>
+<li><a href="Container/sequence container/list/remove.md"><code>remove</code></a></li>
+<li><a href="Container/sequence container/list/rend.md"><code>rend</code></a></li>
+<li><a href="Container/sequence container/list/resize.md"><code>resize</code></a></li>
+<li><a href="Container/sequence container/list/reverse.md"><code>reverse</code></a></li>
+<li><a href="Container/sequence container/list/size.md"><code>size</code></a></li>
+<li><a href="Container/sequence container/list/sort.md"><code>sort</code></a></li>
+<li><a href="Container/sequence container/list/splice.md"><code>splice</code></a></li>
+<li><a href="Container/sequence container/list/swap.md"><code>swap</code></a></li>
+<li><a href="Container/sequence container/list/unique.md"><code>unique</code></a></li>
 
 </ol>
 </details>
