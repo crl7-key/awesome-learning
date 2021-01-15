@@ -49,7 +49,7 @@
 
 ## 结构型模式 Structural Patterns
 
-- [适配器模式 Adapter]():
+- [适配器模式 Adapter](adapter/README.md):
     用于有相关性但不兼容的接口，将一个类的接口转换成客户希望的另外一个接口。`Adapter`模式使得原本由于接口不兼容而不能一起工作的那些类可以一起工作。
 
 - [桥接模式 Bridge]():
