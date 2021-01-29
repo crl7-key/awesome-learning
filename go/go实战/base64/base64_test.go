@@ -1,4 +1,4 @@
-package base64_test
+package base64
 
 import (
 	"encoding/base64"
