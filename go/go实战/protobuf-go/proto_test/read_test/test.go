@@ -5,7 +5,7 @@ import (
 	"io"
 	"os"
 
-	goprotobuf "github.com/crl7/go/go实战/protobuf-go/proto_test"
+	goprotobuf "go-key/go实战/protobuf-go/proto_test"
 
 	"google.golang.org/protobuf/proto"
 )
