@@ -42,8 +42,13 @@
 * [构造函数、析构函数、虚函数是否可以声明为内联函数](#39构造函数析构函数虚函数是否可以声明为内联函数)
 * [auto、decltype和decltype(auto)的用法](#40autodecltype和decltypeauto的用法)
 * [public，protected和private访问和继承权限/public/protected/private的区别](#41publicprotected和private访问和继承权限publicprotectedprivate的区别)
-
-
+* [如何用代码判断大小端](#42如何用代码判断大小端)
+* [volatile、mutable和explicit关键字的用法](#43volatile、mutable和explicit关键字的用法)
+* [什么情况下会调用拷贝构造函数?](#44什么情况下会调用拷贝构造函数)
+* [C++中new的几种类型](#45C++中new的几种类型)
+* [C++中NULL和nullptr的区别](#46C++中NULL和nullptr的区别)
+* [C++的内存分区](#47C++的内存分区)
+* [C++的异常处理的方法](#48C++的异常处理的方法)
 
 ## 1、在main执行之前和之后执行的代码可能是什么？
 **`main`函数执行之前**，主要就是初始化系统相关资源：
@@ -1397,3 +1402,459 @@ int main()
 <table cellspacing="0" cellpadding="0" style="border-collapse:collapse; margin:0 auto; width:540pt"><tbody><tr style="height:17.6pt"><td colspan="2" style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:top; width:145.45pt"><p style="font-size:10.5pt; line-height:200%; margin:0pt; orphans:0; text-align:center; widows:0"><span style="font-family:等线; font-size:10.5pt">基类成员</span></p></td><td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:top; width:116.75pt"><p style="font-size:10.5pt; line-height:200%; margin:0pt; orphans:0; text-align:center; widows:0"><span style="font-family:等线; font-size:10.5pt">p</span><span style="font-family:等线; font-size:10.5pt">rivate</span></p></td><td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:top; width:116.75pt"><p style="font-size:10.5pt; line-height:200%; margin:0pt; orphans:0; text-align:center; widows:0"><span style="font-family:等线; font-size:10.5pt">p</span><span style="font-family:等线; font-size:10.5pt">rotect</span><span style="font-family:等线; font-size:10.5pt">ed</span></p></td><td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:top; width:116.85pt"><p style="font-size:10.5pt; line-height:200%; margin:0pt; orphans:0; text-align:center; widows:0"><span style="font-family:等线; font-size:10.5pt">p</span><span style="font-family:等线; font-size:10.5pt">ublic</span></p></td></tr><tr style="height:9.2pt"><td rowspan="2" style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:top; width:67.2pt"><p style="font-size:10.5pt; line-height:300%; margin:0pt; orphans:0; text-align:center; widows:0"><span style="font-family:等线; font-size:10.5pt">访问方式</span></p></td><td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:top; width:67.45pt"><p style="font-size:10.5pt; line-height:200%; margin:0pt; orphans:0; text-align:center; widows:0"><span style="font-family:等线; font-size:10.5pt">内部访问</span></p></td><td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:top; width:116.75pt"><p style="font-size:10.5pt; line-height:200%; margin:0pt; orphans:0; text-align:center; widows:0"><span style="font-family:等线; font-size:10.5pt">不可访问</span></p></td><td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:top; width:116.8pt"><p style="font-size:10.5pt; line-height:200%; margin:0pt; orphans:0; text-align:center; widows:0"><span style="font-family:等线; font-size:10.5pt">可访问</span></p></td><td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:top; width:116.8pt"><p style="font-size:10.5pt; line-height:200%; margin:0pt; orphans:0; text-align:center; widows:0"><span style="font-family:等线; font-size:10.5pt">可访问</span></p></td></tr><tr style="height:9.2pt"><td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:top; width:67.45pt"><p style="font-size:10.5pt; line-height:200%; margin:0pt; orphans:0; text-align:center; widows:0"><span style="font-family:等线; font-size:10.5pt">外部访问</span></p></td><td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:top; width:116.75pt"><p style="font-size:10.5pt; line-height:200%; margin:0pt; orphans:0; text-align:center; widows:0"><span style="font-family:等线; font-size:10.5pt">不可访问</span></p></td><td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:top; width:116.8pt"><p style="font-size:10.5pt; line-height:200%; margin:0pt; orphans:0; text-align:center; widows:0"><span style="font-family:等线; font-size:10.5pt">不可访问</span></p></td><td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:top; width:116.8pt"><p style="font-size:10.5pt; line-height:200%; margin:0pt; orphans:0; text-align:center; widows:0"><span style="font-family:等线; font-size:10.5pt">不可访问</span></p></td></tr><tr style="height:0pt"><td style="width:78pt; border:none"></td><td style="width:78.3pt; border:none"></td><td style="width:127.6pt; border:none"></td><td style="width:127.65pt; border:none"></td><td style="width:127.7pt; border:none"></td></tr></tbody></table>
 
 
+## 42、如何用代码判断大小端
+- 大端存储：字数据的高字节存储在低地址中
+
+- 小端存储：字数据的低字节存储在低地址中
+
+例如：`32bit`的数组`0x12345678`   
+
+**在`Socket`编程中，往往需要将操作系统所用的小端存储的`IP`地址转换为大端存储，这样才能进行网络传输**å
+
+小端模式中的存储方式为：
+|内存内容| `0x4000`| `0x4001` | `0x4002` | `0x4003`｜    
+|:--:|:--:|:--:|:--:|:--:|  
+|存放内容| `0x78`| `0x56`| `0x34`| `0x12`|  
+
+  
+
+
+大端模式中的存储方式为：
+
+|内存内容| `0x4000`| `0x4001` | `0x4002` | `0x4003`|  
+|:--:|:--:|:--:|:--:|:--:|
+|存放内容| `0x12`| `0x34`| `0x56`| `0x78`|
+
+
+如何在代码中进行判断？
+- **方式一：使用强制类型转换**
+```cpp
+#include <iostream>
+
+int main()
+{
+    int a = 0x1234;
+
+    // 由于int 和char的长度不同，借助int型转char型，只会留下低地址的部分
+    char c = (char)(a);
+
+    if (c == 0x12) {
+        std::cout << "big endian" << std::endl;
+    }
+    else if {
+        std::cout << "little endian" << std::endl;
+    }
+    return 0;   
+}
+```
+
+- **方式二：巧用`union`联合体**
+```cpp
+#include <iostream>
+
+union endian
+{
+    int a;
+    char ch;
+};
+
+int mian()
+{
+    endian value;
+    value.a = 0x12345;
+
+    // a 和ch 共用4字节的内存空间
+    if (value.ch == 0x12) {
+      std::cout << "big endian" << std::endl;
+    }
+    else if {
+        std::cout << "little endian" << std::endl;
+    }
+    return 0;   
+}
+```
+
+## 43、volatile、mutable和explicit关键字的用法
+- `volatile`
+
+`volatile`关键字是一种类型修饰符，用它声明的类型变量表示**可以被某些编译器未知的因素更改**，比如：操作系统、硬件系统或者其他线程等。遇到这个关键字声明的变量，编译器对访问该变量的代码就不再进行优化，从而可以提供对特殊地址的稳定访问。
+
+当要求使用`volatile`声明的变量的值的时候，系统总是重新从它所在的内存读取数据，即使它前面的指令刚刚从该处读取过数据。
+
+`volatile`定义变量的值是易变的，每次用到这个变量的值的时候都要去重新读取这个变量的值，而不是读寄存器内的备份。多线程中被几个任务共享的变量需要定义为`volatile`类型。
+
+**`volatile`指针**
+
+`volatile`指针和`const`修饰词类型，`const`有常量指针和指针常量的说法，`volatile`也有相应的概念。
+
+修饰由指针指向的对象、数据是`const`或`volatile`的：
+```cpp
+const char* cpch;
+volatile char* vpch;
+```
+指针自身的值——一个代表地址的整数变量，是`const`或`volatile`的：
+```cpp
+char* const cpch;
+char* volatile pchv;
+```
+`Tips`：
+   - 可以把一个非`volatile int`赋给`volatile int`，但是不能把非`volatile`对象赋给一个`volatile`对象。
+
+  - 除了基本类型外，对用户定义类型也可以用`volatile`类型进行修饰。
+
+  - `C++`中一个有`volatile`标识符的类只能访问它接口的子集，一个由类的实现者控制的子集。用户只能用`const_cast`来获得对类型接口的完全访问。此外，`volatile`向`const`一样会从类传递到它的成员。
+
+
+**多线程下的`volatile`**
+
+有些变量是用`volatile`关键字声明的。当两个线程都要用到某一个变量且该变量的值会被改变时，应该用`volatile`声明，**该关键字的作用是防止优化编译器把变量从内存装入`CPU`寄存器中**。如果变量被装入寄存器，那么两个线程有可能一个使用内存中的变量，一个使用寄存器中的变量，这会造成程序的错误执行。`volatile`的意思是让编译器每次操作该变量时一定要从内存中真正取出，而不是使用已经存在寄存器中的值。
+
+
+-  `mutable`
+`mutable`的中文意思是“可变的，易变的”，跟`constant`（既`C++`中的`const`）是反义词。在`C++`中，`mutable`也是为了突破`const`的限制而设置的。被`mutable`修饰的变量，将永远处于可变的状态，即使在一个`const`函数中。我们知道，如果类的成员函数不会改变对象的状态，那么这个成员函数一般会声明成`const`的。但是，有些时候，我们需要在`const`函数里面修改一些跟类状态无关的数据成员，那么这个函数就应该被`mutable来`修饰，并且放在函数后后面关键字位置。
+
+
+- `explicit`
+`explicit`关键字用来修饰类的构造函数，被修饰的构造函数的类，不能发生相应的隐式类型转换，只能以显示的方式进行类型转换，注意以下几点：
+
+- `explicit`关键字只能用于类内部的构造函数声明上
+
+- `explicit`关键字作用于单个参数的构造函数
+
+- 被`explicit`修饰的构造函数的类，不能发生相应的隐式类型转换
+
+## 44、什么情况下会调用拷贝构造函数
+- 用类的一个实例化对象去初始化另一个对象的时候
+
+- 函数的参数是类的对象时（非引用传递）
+
+- 函数的返回值是函数体内局部对象的类的对象时 ,此时虽然发生（`Named return Value`优化）`NRV`优化，但是由于返回方式是值传递，所以会在返回值的地方调用拷贝构造函数
+
+另：第三种情况在`Linux g++ `下则不会发生拷贝构造函数，不仅如此即使返回局部对象的引用，依然不会发生拷贝构造函数
+
+
+总结就是：即使发生`NRV`优化的情况下，`Linux+ g++`的环境是不管值返回方式还是引用方式返回的方式都不会发生拷贝构造函数，而`Windows + VS2019`在值返回的情况下发生拷贝构造函数，引用返回方式则不发生拷贝构造函数。
+
+在`c++`编译器发生`NRV`优化，如果是引用返回的形式则不会调用拷贝构造函数，如果是值传递的方式依然会发生拷贝构造函数。
+
+**在VS2019下进行下述实验**：
+```cpp
+class Base 
+{
+public:
+    Base() {}
+
+    Base(const Base& data) {
+        std::cout << "copy constructor is called " << std::endl;
+    }
+
+    ~Base(){}
+};
+
+void useClassBase(Base base) {} 
+
+Base getClassBase() { // 此时会发生拷贝构造函数的调用，虽然发生NRV优化，但是依然调用拷贝构造函数
+    Base base;
+    return base;
+}
+
+// Base& getClassBase2()//  VS2019下，此时编辑器会进行（Named return Value优化）NRV优化,不调用拷贝构造函数 ，如果是引用传递的方式返回当前函数体内生成的对象时，并不发生拷贝构造函数的调用
+//{
+//    Base base;
+//    return base;
+//}
+
+int main()
+{
+    Base b1,b2,b3,b4;
+    Base b2 = b1;         // 调用拷贝构造函数，对应情况1
+    useClassBase(b1);     // 调用拷贝构造函数，对应情况2
+    b3 = getClassBase();  // 发生NRV优化，但是值返回，依然会有拷贝构造函数的调用 情况3
+    b4 = getClassBase2(); // 发生NRV优化，且引用返回自身，不会调用
+    return 0;
+}
+```
+
+情况`1`比较好理解
+
+情况`2`的实现过程是，调用函数时先根据传入的实参产生临时对象，再用拷贝构造去初始化这个临时对象，在函数中与形参对应，函数调用结束后析构临时对象
+
+情况3在执行`return`时，理论的执行过程是：产生临时对象，调用拷贝构造函数把返回对象拷贝给临时对象，函数执行完先析构局部变量，再析构临时对象，依然会调用拷贝构造函数
+
+## 45、C++中new的几种类型
+在`C++`中，`new`有三种典型的使用方法：`plain new`，`nothrow new`和`placement new`
+
+- `plain new`
+
+言下之意就是普通的`new`，就是我们常用的`new`，在`C++`中定义如下：
+```cpp
+void* operator new(std::size_t) throw(std::bad_alloc);
+void operator delete(void *) throw();
+```
+因此`plain new`在空间分配失败的情况下，抛出异常`std::bad_alloc`而不是返回`NULL`，因此通过判断返回值是否为`NULL`是徒劳的，例如：
+```cpp
+#include <iostream>
+
+int main()
+{
+    try {
+        char *ptr = new char[1024*1024*1024];
+        delete ptr;
+    }
+    catch (const std::bad_alloc &ex) {
+        std::cout << ex.what() << std::endl;
+    }
+    return 0;
+}
+// 执行结果：bad allocation
+```
+
+- `nothrow new`
+`nothrow new`在空间分配失败的情况下是不抛出异常，而是返回`NULL`，定义如下：
+```cpp
+void * operator new(std::size_t,const std::nothrow_t&) throw();
+void operator delete(void*) throw();
+```
+
+例如：
+```cpp
+#include <iostream>
+
+int main()
+{
+    char *ptr = new(std::nothrow) char[1024*1024*1024];
+    if (ptr == NULL) {
+        std::cout << "alloc failed" << std::endl;
+    }
+    delete ptr;
+    return 0;
+}
+// 运行结果：alloc failed
+```
+
+- `placement new`   
+这种`new`允许在一块已经分配成功的内存上重新构造对象或对象数组。`placement new`不用担心内存分配失败，因为它根本不分配内存，它做的唯一一件事情就是调用对象的构造函数。定义如下：
+```cpp
+void* operator new(size_t,void*);
+void operator delete(void*,void*);
+```
+使用`placement new`需要注意两点：   
+- `palcement new`的主要用途就是反复使用一块较大的动态分配的内存来构造不同类型的对象或者他们的数组
+
+- `placement new`构造起来的对象数组，要显式的调用他们的析构函数来销毁（析构函数并不释放对象的内存），千万不要使用`delete`，这是因为`placement new`构造起来的对象或数组大小并不一定等于原来分配的内存大小，使用`delete`会造成内存泄漏或者之后释放内存时出现运行时错误。
+
+```cpp
+#include <iostream>
+
+class Base
+{
+public:
+    Base() {
+        m_i = 10;
+        m_j = 20;
+        std::cout << "Base construct m_i = " << m_i << " ,m_j = " << m_j << std::endl;                       
+    }
+    ~Base() {
+        std::cout << "Base destruct " << std::endl;
+    }
+
+private:
+    int m_i;
+    int m_j;
+};
+
+int main()
+{
+    char* ptr = new(std::nothrow) char[sizeof(Base) + 1];
+    if (ptr == NULL) {
+        std::cout << "alloc failed" << std::endl;
+    }
+
+    Base* base = new(ptr) Base; // placement new: 不必担心失败，只要ptr所指对象的空间足够Base创建即可
+
+    // delete base; // error, 不能在此调用delete base
+    base->Base::~Base(); // 显示调用析构函数
+    delete []ptr;
+    return 0;
+}
+```
+输出结果
+```sh
+Base construct m_i = 10 ,m_j = 20
+Base destruct
+```
+
+
+## 46、C++中NULL和nullptr的区别
+
+`NULL`来自`C`语言，一般由宏定义实现，而`nullptr`则是`C++11`的新增关键字。在`C`语言中，`NULL`被定义为`(void*)0`,而在`C++`语言中，`NULL`则被定义为整数`0`。编译器一般对其实际定义如下：
+```cpp
+#ifdef __cplusplus
+#define NULL 0
+#else
+#define NULL ((void *)0)
+#endif
+```
+
+在`C++`中指针必须有明确的类型定义。但是将`NULL`定义为`0`带来的另一个问题是无法与整数的`0`区分。因为`C++`中允许有函数重载，所以可以试想如下函数定义情况：
+```cpp
+#include <iostream>
+
+void fun(char* p) {
+    std::cout << "char*" << std::endl;
+}
+
+void fun(int p) {
+    std::cout << "int" << std::endl;
+}
+
+int main()
+{
+    fun(NULL);
+    return 0;
+}
+// 输出结果：int
+```
+那么在传入`NULL`参数时，会把`NULL`当做整数`0`来看，如果我们想调用参数是指针的函数，该怎么办呢?。`nullptr`在`C++11`被引入用于解决这一问题，`nullptr`可以明确区分整型和指针类型，能够根据环境自动转换成相应的指针类型，但不会被转换为任何整型，所以不会造成参数传递错误。
+
+`nullptr`的一种实现方式如下：
+```cpp
+const class nullptr_t{
+public:
+    template<class T>  inline operator T*() const{ return 0; }
+    template<class C, class T> inline operator T C::*() const { return 0; }
+private:
+    void operator&() const;
+} nullptr = {};
+```
+
+以上通过模板类和运算符重载的方式来对不同类型的指针进行实例化从而解决了(`void*`)指针带来参数类型不明的问题，另外由于`nullptr`是明确的指针类型，所以不会与整形变量相混淆。但`nullptr`仍然存在一定问题，例如：
+```cpp
+#include <iostream>
+
+void fun(char* p) {
+    std::cout << "char* p" << std::endl;
+}
+void fun(int* p) {
+    std::cout << "int* p" << std::endl;
+}
+
+void fun(int p) {
+    std::cout << "int p" << std::endl;
+}
+int main()
+{
+    fun((char*)nullptr); // 语句1
+    fun(nullptr);        // 语句2
+    fun(NULL);           // 语句3
+    return 0;
+}
+// 运行结果：
+// 语句1：char* p
+// 语句2:报错，有多个匹配
+// 语句3：int p
+```
+在这种情况下存在对不同指针类型的函数重载，此时如果传入`nullptr`指针则仍然存在无法区分应实际调用哪个函数，这种情况下必须显示的指明参数类型。
+
+## 47、C++的内存分区
+
+`C++`中的内存分区，分别是堆、栈、自由存储区、全局/静态存储区、常量存储区和代码区。如下图所示
+![memory_partition](images/memory_partition.png)
+- **栈**：在执行函数时，函数内局部变量的存储单元都可以在栈上创建，函数执行结束时这些存储单元自动被释放。栈内存分配运算内置于处理器的指令集中，效率很高，但是分配的内存容量有限
+
+- **堆**：就是那些由`new`分配的内存块，他们的释放编译器不去管，由我们的应用程序去控制，一般一个`new`就要对应一个`delete`。如果程序员没有释放掉，那么在程序结束后，操作系统会自动回收。
+
+- **自由存储区**：就是那些由`malloc`等分配的内存块，它和堆是十分相似的，不过它是用`free`来结束自己的生命的
+
+- **全局/静态存储区**：全局变量和静态变量被分配到同一块内存中，在以前的`C`语言中，全局变量和静态变量又分为初始化的和未初始化的，在`C++`里面没有这个区分了，它们共同占用同一块内存区，在该区定义的变量若没有初始化，则会被自动初始化，例如`int`型变量自动初始为`0`。
+
+- **常量存储区**：这是一块比较特殊的存储区，这里面存放的是常量，不允许修改
+
+- **代码区**：存放函数体的二进制代码
+
+## 48、C++的异常处理的方法
+在程序执行过程中，由于程序员的疏忽或是系统资源紧张等因素都有可能导致异常，任何程序都无法保证绝对的稳定，常见的异常有：
+- 数组下标越界
+- 除法计算时除数为`0`
+- 动态分配空间时空间不足
+- …
+
+如果不及时对这些异常进行处理，程序多数情况下都会崩溃。
+
+**（1）try、throw和catch关键字**
+`C++`中的异常处理机制主要使用`try`、`throw`和`catch`三个关键字，其在程序中的用法如下:
+```cpp
+#include <iostream>
+
+int main()
+{
+    double m = 1, n = 0;
+    try {
+        st::cout << "before dividing." << st::endl;
+        if (n == 0)
+            throw - 1;  //抛出int型异常
+        else if (m == 0)
+            throw - 1.0;  //拋出 double 型异常
+        else
+            std::cout << m / n << std::endl;
+        std::cout << "after dividing." << std::endl;
+    }
+    catch (double d) {
+        std::cout << "catch (double)" << d << std::endl;
+    }
+    catch (...) {
+        std::cout << "catch (...)" << std::endl;
+    }
+    std::cout << "finished" << std::endl;
+    return 0;
+}
+// 运行结果:
+// before dividing.
+// catch (...)
+// finished
+```
+代码中，对两个数进行除法计算，其中除数为`0`。可以看到以上三个关键字，程序的执行流程是先执行`try`包裹的语句块，如果执行过程中没有异常发生，则不会进入任何`catch`包裹的语句块。如果发生异常，则使用`throw`进行异常抛出，再由`catch`进行捕获，`throw`可以抛出各种数据类型的信息，代码中使用的是数字，也可以自定义异常`class`。
+
+`catch`根据`throw`抛出的数据类型进行精确捕获（不会出现类型转换），如果匹配不到就直接报错，可以使用`catch(…)`的方式捕获任何异常（不推荐）。
+
+当然，如果`catch`了异常，当前函数如果不进行处理，或者已经处理了想通知上一层的调用者，可以在`catch`里面再`throw`异常。
+
+**（2）函数的异常声明列表**
+有时候，程序员在定义函数的时候知道函数可能发生的异常，可以在函数声明和定义时，指出所能抛出异常的列表，写法如下：
+```cpp
+int func() throw(int,double,A,B,C){...};
+```
+这种写法表名函数可能会抛出`int`,`double`型或者`A`、`B`、`C`三种类型的异常，如果`throw`中为空，表明不会抛出任何异常，如果没有`throw`则可能抛出任何异常。
+
+**（3）C++标准异常类  exception**
+
+`C++`标准库中有一些类代表异常，这些类都是从`exception`类派生而来的,如下图
+![exception](images/exception.png)
+- `bad_typeid`：使用`typeid`运算符，如果其操作数是一个多态类的指针，而该指针的值为`NULL`，则会拋出此异常，例如：
+```cpp
+#include <iostream>
+#include <typeinfo>
+
+class Base 
+{
+public:
+    virtual ~Base();
+};
+
+int main() 
+{
+    Base* base = NULL;
+    try {
+        std::cout << typeid(*base).name() << std::endl; // error condition
+    }
+    catch(std::bad_typeid) {
+        std::cout << "Object is NULL" << std::endl;
+    }
+}
+// 运行结果：Object is NULL
+```
+- `bad_cast`：在用`dynamic_cast`进行从多态基类对象（或引用）到派生类的引用的强制类型转换时，如果转换是不安全的，则会拋出此异常
+
+- `bad_alloc`：在用`new`运算符进行动态内存分配时，如果没有足够的内存，则会引发此异常.
+
+- `out_of_range`:用`vector`或`string`的`at`成员函数根据下标访问元素时，如果下标越界，则会拋出此异常。
