@@ -256,6 +256,7 @@ Create /worker/w1
 ### Quorum模式
 处于`Quorum`模式的`Zookeeper`集群包含多个`Zookeeper`节点。下图的`Zookeeper`集群有3个节点，其中节点1是`leader`节点，节点`2`和节点`3`是`follower`节点.`leader`节点可以处理读写请求，`follower`只可以处理读请求。`follower`在接到写请求时会把写请求转发给`leader`来处理。
 ![zookeeper](images/zookeeper_06.png)
+
 Quorum模式下只能有一个`leader`节点，可以有多个`follower`节点。
 
 
