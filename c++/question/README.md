@@ -1040,6 +1040,16 @@ Base::func()
 2. `cd` 到你所在`cpp`文件的目录中   
 3. 执行命令 `cl /d1 reportSingleClassLayoutMultiDerive analysis_virtual_by_tools.cpp`   
 
+在`linux`上`g++`也有打印虚表的操作（请在`Linux`上使用`g++`），会自动写到一个文件里：
+```sh
+g++ -fdump-class-hierarchy test.cpp  #g++ <= 8.0
+g++ -fdump-lang-class test.cpp # g++ >= 8.0
+```
+
+`clang`同样也有命令：
+```sh
+clang -Xclang -fdump-vtable-layouts -stdlib=libc++ -c test.cpp
+```
 
 ## 36、C++有哪几种构造函数
 
