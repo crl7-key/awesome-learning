@@ -164,7 +164,7 @@ cout << i << " " << ++i << endl;  // undefined未定义的
 
 ```c++
 int i = 1024;
-int k = -i;				// k是-1024
+int k = -i;			 // k是-1024
 bool b = true;
 bool b2 = -b;			// b2为true
 ```
@@ -180,7 +180,7 @@ int ival1 = 21/6;		// ival = 3, 结果进行了删节，余数被抛弃掉了
 int ival2 = 21/7;		// ival = 3,没有余数，结果是整数值
 int ival = 42;
 double dval = 3.14;
-ival % 12;				// ok: 结果为6
+ival % 12;			// ok: 结果为6
 ival % dval;			// error : 运算对象是浮点类型
 ```
 
@@ -189,7 +189,7 @@ ival % dval;			// error : 运算对象是浮点类型
 ```c++
 21 % 6; 		/* 结果是3  */ 			21 / 6; 		/* 结果是3  */
 21 % 7; 		/* 结果是0  */ 			21 / 7; 		/* 给果是3  */
--21 % -8; 	    /* 结果是-5 */ 			-21 / -8; 	    /* 结果是2  */
+-21 % -8; 	        /* 结果是-5 */ 		       -21 / -8; 	        /* 结果是2  */
 21 % -5; 		/* 结果是1  */ 			21 / -5; 		/* 结果是-4 */
 ```
 
@@ -228,9 +228,9 @@ for (const auto &s : text){	// 对于text 的每个元素
 	cout << s; 				// 输出当前元素
 	// 遇到空字符亭或者以句号结束的字符串进行换行
 	if (s.empty() || s[s.size() - 1] == '.')
-		cout << endl;
+	    cout << endl;
 	else
-		cout << " "; 		// 否则用空格隔开
+	    cout << " "; 		// 否则用空格隔开
 }
 ```
 
@@ -244,7 +244,7 @@ for (const auto &s : text){	// 对于text 的每个元素
 ```c++
 // 输出vec的首元素(如果有的话)
 if (!vec.empty())
-		cout << vec[0];
+	cout << vec[0];
 ```
 
 当`empty`函数返回假时结果为真。
@@ -297,18 +297,18 @@ if (val == 1)
 
 ```c++
 int i = 0, j = 0, k = 0;				// 初始化而非赋值
-const int ci = i;						// 初始化而非赋值
+const int ci = i;					// 初始化而非赋值
 
-1024 = k ;								// 错误:字面值是右值
-i + j = k ;								// 错误:算术表达式是右值
-ci = k;									// 错误:ci是常量(不可修改的)左值
+1024 = k ;						// 错误:字面值是右值
+i + j = k ;						// 错误:算术表达式是右值
+ci = k;							// 错误:ci是常量(不可修改的)左值
 ```
 
 - C++11新标准允许使用花括号括起来的初始值列表作为赋值语句的右侧运算对象。
 
 ```c++
-k = (3.14);									  // 错误:窄化转换
-vector<int> vi;     					      // 初始为空
+k = (3.14);					          // 错误:窄化转换
+vector<int> vi;     					  // 初始为空
 vi = {0,1,2,3,4,5,6,7,8,9}; 				  // vi现在含有10个元素了，值从0到9
 ```
 
@@ -322,7 +322,7 @@ int ival, *pval;			// ival的类型是int;pval是指向int的指针
 ival = pval = 0;			// 错误: 不能把指针的值赋给int
 
 string s1, s2;
-s1 = s2 = "OK";			   // 字符串字面值"OK"转换成string对象
+s1 = s2 = "OK";			       // 字符串字面值"OK"转换成string对象
 ```
 
 ### 赋值运算优先级较低
@@ -409,9 +409,9 @@ std::cout << *iter << std::endl;
 
 ```c++
 string s1 = "a string", *p = &s1;
-auto n = s1.size(); // 运行string对象s1的size成员
-n = (*p).size();    // 运行p所指对象的size成员
-n = p->size();      // 等价于(*p).size()
+auto n = s1.size();  // 运行string对象s1的size成员
+n = (*p).size();     // 运行p所指对象的size成员
+n = p->size();       // 等价于(*p).size()
 ```
 
 因为解引用运算符的优先级低于点运算符，所以执行解引用运算的子表达式两端必须加上括号。如果没如括号，代码的含义就大不相同了：
@@ -440,7 +440,7 @@ string finalgrade = (grade < 60) ? "fail" : "pass";
 
 ```c++
 finalgrade = (grade > 90) ? "high pass"
-							: (grade < 60) ? "fail" : "pass";
+				       : (grade < 60) ? "fail" : "pass";
 ```
 
 - 条件运算符的优先级非常低，因此当一个长表达式中嵌套了条件运算子表达式时，通常需要在它两端加上括号。
@@ -450,13 +450,13 @@ cout << ((grade < 60) ? "fail" : "pass"); 		// 输出pass或者fail
 
 cout << (grade < 60) ? "fail" : "pass"; 		// 输出1或者0
 // 等价于<=>
-// cout << (grade < 60); 						// 输出1或者0
-// cout ? "fail" : "pass"; 						// 根据cout的值是true还是false产生对应的字面值
+// cout << (grade < 60); 				// 输出1或者0
+// cout ? "fail" : "pass"; 				// 根据cout的值是true还是false产生对应的字面值
 
 cout << grade < 60 ? "fail" : "pass"; 			// 错误:试图比较cout和60
 // 等价于<=>
-// cout << grade; 								// 小于运算符的优先级低于移位运算符，所以先输出grade
-// cout < 60 ? "fail" : "pass"; 				// 然后比较cout和60
+// cout << grade; 					// 小于运算符的优先级低于移位运算符，所以先输出grade
+// cout < 60 ? "fail" : "pass"; 			// 然后比较cout和60
 ```
 
 ## 位运算
@@ -478,12 +478,12 @@ cout << grade < 60 ? "fail" : "pass"; 			// 错误:试图比较cout和60
 `int`   `32`位
 ```cpp
 int operatorAnd(int& a,int& b) {
-	      return a & b;
+    return a & b;
 }
 
 int main()
 {
-	// 3 即0000 0011        5 即0000 0101   =>  3 & 5 = 0000 0001 
+    // 3 即0000 0011        5 即0000 0101   =>  3 & 5 = 0000 0001 
     int a = 3, b = 5;
 
     std::cout << operatorAnd(a,b) << std::endl; // output : 1
@@ -500,12 +500,12 @@ int main()
 
 ```cpp
 int operatorOr(int& a,int& b) {
-	      return a & b;
+    return a & b;
 }
 
 int main()
 {
-	// 3 即0000 0011        5 即0000 0101   =>  3 | 5 = 0000 0111 
+    // 3 即0000 0011        5 即0000 0101   =>  3 | 5 = 0000 0111 
     int a = 3, b = 5;
 
     std::cout << operatorOr(a,b) << std::endl; // output : 7
@@ -521,30 +521,30 @@ int main()
 作用：可以将某些位取反
 ```cpp
 int operatorNegate(int& data) {
-	      return ~data;
+    return ~data;
 }
 
 int main()
 {
-	// 10 即0000 1010        
-	// 计算补码：（正数的补码与原码相同，而正数的原码就是二进制）即 0000 1010
-	// 按位取反：1111 0101
-	// 开始把1111 0101转换为原码 
-	// 如果最高位（从左边开始的第一位）为0则表示的就是正数：正数的原码和取反后的数相同。
-	// 如果最高位为1则表示的就是负数：先将已取反的数减去1，再对差进行取反（注意：保留最高位不变），最后加上一个负号 
-	// 所以把1111 0101 减1 =>    1111 0100 转换为原码后为 1000 1011 由于最高位1表示负数 即 -11 
+    // 10 即0000 1010        
+    // 计算补码：（正数的补码与原码相同，而正数的原码就是二进制）即 0000 1010
+    // 按位取反：1111 0101
+    // 开始把1111 0101转换为原码 
+    // 如果最高位（从左边开始的第一位）为0则表示的就是正数：正数的原码和取反后的数相同。
+    // 如果最高位为1则表示的就是负数：先将已取反的数减去1，再对差进行取反（注意：保留最高位不变），最后加上一个负号 
+    // 所以把1111 0101 减1 =>    1111 0100 转换为原码后为 1000 1011 由于最高位1表示负数 即 -11 
     int data = 10;
 
     std::cout << operatorNegate(data) << std::endl; // output : -11
 
-	// 负数取反
-	int data2 = -10;
-	// 先将-10取绝对值10, 10的二进制为 0000 1010
-	// 将0000 1010用补码表示(对于负数的补码：将其对应正数的二进制取反后，加1) 即 1111 0101 + 1 = 1111 0110
-	// 将补码按位取反得 0000 1001
-	// 将反码转换为原码, 如果最高位（从左边开始的第一位）为0则表示的就是正数：正数的原码和取反后的数相同。
-	//  即 0000 1001  转为10进制为 9
-	std::cout << operatorNegate(data2) << std::endl; // output :  9
+    // 负数取反
+    int data2 = -10;
+    // 先将-10取绝对值10, 10的二进制为 0000 1010
+    // 将0000 1010用补码表示(对于负数的补码：将其对应正数的二进制取反后，加1) 即 1111 0101 + 1 = 1111 0110
+    // 将补码按位取反得 0000 1001
+    // 将反码转换为原码, 如果最高位（从左边开始的第一位）为0则表示的就是正数：正数的原码和取反后的数相同。
+    //  即 0000 1001  转为10进制为 9
+    std::cout << operatorNegate(data2) << std::endl; // output :  9
 
     return 0;
 }
@@ -557,12 +557,12 @@ int main()
 作用：一般用于加密的场景。
 ```cpp
 int operatorXOR(int& a,int& b) {
-	      return a ^ b;
+    return a ^ b;
 }
 
 int main()
 {
-	// 3 即0000 0011        5 即0000 0101   =>  3 ^ 5 = 0000 0110 
+    // 3 即0000 0011        5 即0000 0101   =>  3 ^ 5 = 0000 0110 
     int a = 3, b = 5;
 
     std::cout << operatorXOR(a,b) << std::endl; // output : 6
@@ -586,9 +586,9 @@ int main()
 ```cpp
 int main()
 {
-	// 3 即0000 0011     3 << 2   ->   0000 1100 = 12  
+    // 3 即0000 0011     3 << 2   ->   0000 1100 = 12  
     int data = 3;
-	data = data << 2;
+    data = data << 2;
     std::cout << data << std::endl; // output : 12
 
     return 0;
@@ -609,9 +609,9 @@ int main()
 ```cpp
 int main()
 {
-	// 3 即0000 0011     3 >> 2   ->   0000 0000 = 0  
+    // 3 即0000 0011     3 >> 2   ->   0000 0000 = 0  
     int data = 3;
-	data = data >> 2;
+    data = data >> 2;
     std::cout << data << std::endl; // output : 0
 
     return 0;
@@ -625,11 +625,11 @@ int main()
 ```c++
 Sales_data data, *p;
 sizeof(Sales_data); 					// 存储Sales_data类型的对象所占的空间大小
-sizeof data;							// data的类型的大小，即sizeof(Sales_data)
-sizeof p;							   // 指针所占的空间大小
-sizeof *p;							   // p所指类型的空间大小，即sizeof(Sales_data)
-sizeof data.revenue; 				  // Sales_data的revenue成员对应类型的大小
-sizeof Sales_data::revenue; 	      // 另一种获取revenue大小的方式
+sizeof data;						// data的类型的大小，即sizeof(Sales_data)
+sizeof p;						// 指针所占的空间大小
+sizeof *p;						// p所指类型的空间大小，即sizeof(Sales_data)
+sizeof data.revenue; 				  	// Sales_data的revenue成员对应类型的大小
+sizeof Sales_data::revenue; 	      			// 另一种获取revenue大小的方式
 ```
 
 在`sizeof`的运算对象中解引用一个无效指针仍然是一种安全的行为，因为指针实际上并没有被真正使用。
@@ -692,12 +692,12 @@ for(vector<int>::size_type ix = 0;
 
 ```c++
 bool flag; 		char cval;
-short sval; 	unsigned short usval;
+short sval; 		unsigned short usval;
 int ival; 		unsigned int uival;
 long lval; 		unsigned long ulval;
-float fval; 	double dval;
+float fval; 		double dval;
 
-3.14159L + 'a';			    // 'a'提升成int，然后该int值转换成long double
+3.14159L + 'a';			        // 'a'提升成int，然后该int值转换成long double
 dval + ival; 				// ival转换成double
 dval + fval;				// fval转换成double
 ival = dval;				// dval转换成(切除小数部分后)int
@@ -715,8 +715,8 @@ uival + lval;				// 根据unsigned int和long所占空间的大小进行转换
 **数组转换成数组**：在大多数用到数组中，数组自动转换成指向数组首元素的指针。
 
 ```c++
-int ia[10];					// 含有10个整数的数组
-int *ip = ia;				// ia转换成指向数组首元素的指针
+int ia[10];				 // 含有10个整数的数组
+int *ip = ia;				 // ia转换成指向数组首元素的指针
 ```
 
 - 当数组用在`declptype`关键字的参数，或者作为取地址(`&`)、`sizeof`及`typeid`等运算符的运算对象时，上述转换不会发生
@@ -735,7 +735,7 @@ int *ip = ia;				// ia转换成指向数组首元素的指针
 
 ```c++
 char *cp = get_string();
-if (cp)	/* ... */								// 如果指针cp不是0，条件为真
+if (cp)	/* ... */							// 如果指针cp不是0，条件为真
 while(*cp) /* ... */							// 如果*cp不是空字符，条件为真
 ```
 
@@ -745,7 +745,7 @@ while(*cp) /* ... */							// 如果*cp不是空字符，条件为真
 
 ```c++
 int i;
-const int &j = i;						//	非常量转换成const int 的引用
+const int &j = i;						//  非常量转换成const int 的引用
 const int *p = &i;						//  非常量的地址转换成const的地址
 int &r = j, *q = p;						//  error : 不允许const转换成非常量
 ```
@@ -762,8 +762,8 @@ const char *str = s.c_str();
 - 在条件部分读入`istream`
 
 ```c++
-string s, t = "a value";					//字符串字面值转换成string类型
-while(cin >> s)										//while的条件部分把cin转换成布尔值
+string s, t = "a value";					// 字符串字面值转换成string类型
+while(cin >> s)							// while的条件部分把cin转换成布尔值
 ```
 
  
@@ -814,12 +814,12 @@ double *dp = static_cast<double*>(p);
 ```c++
 class Base {
 public:
-		virtual void foo(){}
+    virtual void foo(){}
 };
 
 class Derived : public Base {
 public :
-		virtual void foo() {}
+    virtual void foo() {}
 }
 
 class Pal {
@@ -831,9 +831,9 @@ int main()
   	Base* b = nullptr;
   	Derived *d = nullptr;
   	Pal *p = nullptr;
-  	b = static_cast<Base*>(d);					// 子类转父类，向上转换 安全
+  	b = static_cast<Base*>(d);				// 子类转父类，向上转换 安全
   	d = static_cast<Derived*>(b);				// 父类转子类，向下转换，不安全
-  	p = static_cast<Pal>(d);					// error : 没有发生继承关系，不可以用静态转换
+  	p = static_cast<Pal>(d);				// error : 没有发生继承关系，不可以用静态转换
 	return 0;
 }
 ```
@@ -863,14 +863,14 @@ const_cast<string>(cp);									// error : const_cast只改变常量属性
 //比较两个string对象的长度，返回较短的那个引用
 const string &shorterString(const string &s1,const string &s2)
 {
-		return s1.size() <= s2.size() ? s1 : s2;
+	return s1.size() <= s2.size() ? s1 : s2;
 }
 
 string &shorterString(string &s1,string &s2)
 {
-		auto &r = shorterString(const_cast<const string&>(s1),
-														const_cast<const string&>(s2));
-		return const_cast<string&>(r);
+	auto &r = shorterString(const_cast<const string&>(s1),
+	const_cast<const string&>(s2));
+	return const_cast<string&>(r);
 }
 ```
 
@@ -890,19 +890,19 @@ int *r = const_cast<int*>(q);
 ```c++
 class Base {
 public:
-		virtual void foo(){}
+	virtual void foo(){}
 };
 
 class Derived : public Base {
 public :
-		virtual void foo() {}
+	virtual void foo() {}
 }
 
 int main()
 {
   	Base* b = nullptr;
   	Derived *d = nullptr;
-  	b = dynamic_cast<Base*>(d);					// 子类转父类，向上转换 安全
+  	b = dynamic_cast<Base*>(d);				// 子类转父类，向上转换 安全
   	d = dynamic_cast<Derived*>(b);				// 父类转子类，向下转换，不安全
 	return 0;
 }
