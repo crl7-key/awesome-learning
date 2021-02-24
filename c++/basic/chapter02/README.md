@@ -119,8 +119,8 @@ for(unsigned i = 10; i >= 0; --i ) // 错误：变量i 永远不会小于0，循
 ```c++
 unsigned i = 11; //确定要输出的最大数，从比它大1的数开始
 while(i > 0) {
-	--i;					//先减1，这样最后一次迭代时就会输出0
-	std::cout << i << std::endl;
+    --i;					//先减1，这样最后一次迭代时就会输出0
+    std::cout << i << std::endl;
 }
 ```
 
@@ -167,8 +167,8 @@ while(i > 0) {
 - 同时加 `L` 和 `U` 就能够得到 `unsigned long` 类型的字面值常量。
 
 ```c++
-128u		/* unsigned */
-024UL		/* unsigned long */
+128u			/* unsigned */
+024UL			/* unsigned long */
 1L			/* long */
 8Lu			/* unsigned long */
 ```
@@ -177,8 +177,8 @@ while(i > 0) {
 
 ```c++
 // 按照书写形式，每3位分为一组
-std::cout << 0B1'101;   // 输出"13"
-std::cout << 1'100'000; // 输出"1100000"
+std::cout << 0B1'101;   	// 输出"13"
+std::cout << 1'100'000; 	// 输出"1100000"
 ```
 
 ​	**浮点型字面值**默认是一个`double`。
@@ -206,7 +206,7 @@ std::cout << 1'100'000; // 输出"1100000"
 std::cout << 'a' 	
 std::cout << '2' 	
 std::cout << ',' 	
-std::cout << ' ' // blank
+std::cout << ' ' 		// blank
 std::cout << L'a'
 ```
 
@@ -214,8 +214,8 @@ std::cout << L'a'
 
 ```c++
 std::cout << "Hello World!" 				// 文字简单字符串
-std::cout << "" 							// 文本空字符串
-std::cout << "\nCC\toptions\tfile.[cC]\n" 	// 文字字符串 using newlines and tabs
+std::cout << "" 					// 文本空字符串
+std::cout << "\nCC\toptions\tfile.[cC]\n" 		// 文字字符串 using newlines and tabs
 ```
 
 ### 转义字符
@@ -252,9 +252,9 @@ std::cout << "Hi" << std::endl;
 ```c++
 // 多行字符串文本
 	std::cout << "a multi-line \
-						string literal \
-						using a backslash"
-						<< std::endl;
+		    string literal \
+		    using a backslash"
+		 << std::endl;
 ```
 
 **注意**：反斜线符号必须是该行的尾字符——不允许有注释或空格符。同样，后继行行首的任何空格和制表符都是字符串字面值的一部分。正因如此，长字符串字面值的后继行才不会有正常的缩进。
@@ -315,8 +315,8 @@ int units_sold{0};
 
 ```c++
 long double ld = 3.1415926536;
-int a{ld}, b = {ld};//error: 转换未执行，因为存在丢失信息的危险
-int c{ld}, d = ld;	// ok : 转换执行，且确实丢失了部分值
+int a{ld}, b = {ld};		// error: 转换未执行，因为存在丢失信息的危险
+int c{ld}, d = ld;		// ok : 转换执行，且确实丢失了部分值
 ```
 
 如果定义变量时未指定初值，则变量被 **默认初始化（default initialized）**。对于内置类型，定义于任何函数体之外的变量被初始化为`0`，函数体内部的变量将**不被初始化（uninitialized）**。
@@ -328,11 +328,11 @@ int c{ld}, d = ld;	// ok : 转换执行，且确实丢失了部分值
 对于自定义类的列表初始化格式为：**构造函数():变量名:(值)，变量名:(值),变量名:(值){}**
 
 ```c++
- //无参的构造，列表初始化
+ // 无参的构造，列表初始化
 Foo():m_a(10),m_b(20),m_c(30)
 {
 }
-//有参的构造,列表初始化
+// 有参的构造,列表初始化
 Foo(int a, int b, int c):m_a(a),m_b(b),m_c(c)
 {
 }
@@ -347,14 +347,14 @@ Foo(int a, int b, int c):m_a(a),m_b(b),m_c(c)
 如果想声明一个变量而不定义它，就在变量名前添加关键字 `extern`，并且不要显式地初始化变量。
 
 ```c++
-extern in i;  // 声明i而非定义i
-int j;				// 声明并定义j
+extern in i; 			 // 声明i而非定义i
+int j;				 // 声明并定义j
 ```
 
 `extern`语句如果包含了初始值就不再是声明了，而变成了定义。
 
 ```c++
-extern double pi = 3.1416 // 定义
+extern double pi = 3.1416 		// 定义
 ```
 
 变量能且只能被定义一次，但是可以被声明多次。
@@ -398,10 +398,10 @@ extern double pi = 3.1416 // 定义
 int reused = 42;  // reused拥有全局作用域
 int main()
 {
-	int unique = 0; // unique拥有块作用域
+	int unique = 0; 					// unique拥有块作用域
 	// output #1: 使用全局变量reused; 输出 42 0
 	std::cout << reused << " " << unique << std::endl;
-	int reused = 0; // 新建局部变量reused，覆盖了全局变量reused
+	int reused = 0; 					// 新建局部变量reused，覆盖了全局变量reused
 	// output #2: 使用局部变量reused; 输出 0 0
 	std::cout << reused << " " << unique << std::endl;
 	// output #3: 显式访问全局变量reused; 输出 42 0
@@ -426,15 +426,15 @@ int main()
 ```c++
 int ival = 1024;
 int ival2 = 2048;
-int &refVal = ival;		//refVal指向ival(是ival的另一个名字)
-int &refVal2;					//error：引用必须初始化
-refVal = ival2;				//error：引用一旦确定标志的空间之后不能再标志其它的内存空间
+int &refVal = ival;				// refVal指向ival(是ival的另一个名字)
+int &refVal2;					// error：引用必须初始化
+refVal = ival2;					// error：引用一旦确定标志的空间之后不能再标志其它的内存空间
 ```
 
 引用的内存空间必须是合法的，不能引用常量
 
 ```c++
-int &refVal2 = 1024; 	//error：1024没有内存空间
+int &refVal2 = 1024; 				// error：1024没有内存空间
 ```
 
 定义引用时，程序把引用和它的初始值绑定（`bind`）在一起，而不是将初始值拷贝给引用。一旦初始化完成，将无法再令引用重新绑定到另一个对象，因此 引用必须初始化。
@@ -449,9 +449,9 @@ int &refVal2 = 1024; 	//error：1024没有内存空间
 
 ```c++
 int i = 1024, i2 = 2048;
-int &r = i, r2 = i2; 	 // r是引用，r2是int
-int i3 = 1024, &ri = i3; // 定义一个对象和一个引用
-int &r3 = i3, &r4 = i2;  // 定义两个引用
+int &r = i, r2 = i2; 			 // r是引用，r2是int
+int i3 = 1024, &ri = i3; 		// 定义一个对象和一个引用
+int &r3 = i3, &r4 = i2;  		// 定义两个引用
 ```
 
 ### 指针(pointer)
@@ -465,8 +465,8 @@ int &r3 = i3, &r4 = i2;  // 定义两个引用
   将声明符写成 `*d` 的形式来定义指针类型，其中 `d` 是变量名称。如果在一条语句中定义了多个指针变量，则每个量前都必须有符号 `*`。
 
   ```c++
-  int *ip1, *ip2;		//ip1和ip2都是指向int类型对象的指针
-  double dp, *dp2;	//dp2是指向double型对象的指针，dp是double型对象
+  int *ip1, *ip2;		// ip1和ip2都是指向int类型对象的指针
+  double dp, *dp2;		// dp2是指向double型对象的指针，dp是double型对象
   ```
 
   ***获取对象的地址***
@@ -475,7 +475,7 @@ int &r3 = i3, &r4 = i2;  // 定义两个引用
 
   ```c++
   int ival = 42;
-  int *p = &ival; // p 存放变量ival的地址，或者说p是指向变量ival的指针
+  int *p = &ival; 		// p 存放变量ival的地址，或者说p是指向变量ival的指针
   ```
 
   因为引用不是对象，没有实际地址，所以不能定义指向引用的指针。
@@ -497,15 +497,15 @@ int &r3 = i3, &r4 = i2;  // 定义两个引用
 
 ```c++
 int ival = 42;
-int *p = &ival;									// p存放着变量ival的地址，或者说p是指向变量ival的指针
-std::cout << *p << std::endl;  // 由符号*得到指针p所指的对象，输出42
+int *p = &ival;						// p存放着变量ival的地址，或者说p是指向变量ival的指针
+std::cout << *p << std::endl;  				// 由符号*得到指针p所指的对象，输出42
 ```
 
 给解引用的结果赋值，就是给指针所指向的对象赋值。
 
 ```c++
 *p = 0;  		  // 由符号*得到指针p所指的对象，即可经由p为变量ival赋值
-cout << *p;   // 输出0
+cout << *p;  		 // 输出0
 ```
 
 **注意**：解引用操作仅适用于那些确实指向了某个对象的有效指针。
@@ -515,7 +515,7 @@ cout << *p;   // 输出0
 指的是没有初始化的指针，指针的指向是随机，不可以操作野指针，指针保存的地址一定是定义过的(向系统申请过的)。
 
 ```c++
-int *p;		//野指针
+int *p;		// 野指针
 *p = 200;	
 ```
 
@@ -538,23 +538,23 @@ int *p3 = NULL;     // 等价于 int *p3 = 0;
 
 ```c++
 int i = 42;
-int *pi = 0;  // pi被初始化，但没有指向任何对象
-int *pi2 = &i;  // pi2被初始化，存有i的地址
-int *pi3;  //如果pi3定义于块内，则pi3的值是无法确定的
-pi3 = pi2;  // pi3和pi2指向同一个对象i
-pi2 = 0;  // 现在pi2不指向任何对象了
+int *pi = 0; 			 // pi被初始化，但没有指向任何对象
+int *pi2 = &i;  		//  pi2被初始化，存有i的地址
+int *pi3;  			//  如果pi3定义于块内，则pi3的值是无法确定的
+pi3 = pi2;  			//  pi3和pi2指向同一个对象i
+pi2 = 0;  			//  现在pi2不指向任何对象了
 ```
 
 **记住赋值永远改变的是等号左侧的对象。**
 
 ```c++
-pi = &ival ; // pi的值被改变，现在pi指向了ival
+pi = &ival ;			 // pi的值被改变，现在pi指向了ival
 ```
 
 代码的意思是 `pi` 赋一个新的值，也就是改变了那个存放在 `pi`内的地址值。
 
 ```c++
-*pi = 0 ; // iva1的值被改变，指针pi并没有改变
+*pi = 0 ; 			// iva1的值被改变，指针pi并没有改变
 ```
 
 而这一行代码是 `*pi`（也就是指针 `pi` 指向的那个对象）发生改变。
@@ -566,8 +566,8 @@ pi = &ival ; // pi的值被改变，现在pi指向了ival
 ```c++
 double obj = 3.14, *pd = &obj;
 // 正确：void*能存放任意类型对象的地址
-void *pv = &obj; // obj可以是任意类型的对象
-pv = pd; // pv可以存放任意类型的指针
+void *pv = &obj; 			// obj可以是任意类型的对象
+pv = pd; 				// pv可以存放任意类型的指针
 ```
 
 指针的大小都是为4个字节。
@@ -584,28 +584,28 @@ int i = 1024 , *p = &i， &r = i;
 修饰只修饰自己，不是这条语句中所有变量。错误案例：
 
 ```c++
-int* p1 , p2; // p1是指向int的指针， p2是int
+int* p1 , p2; 			// p1是指向int的指针， p2是int
 ```
 
 正确案例：
 
 ```c++
-int *p1, *p2; // p1和p2都是指向int的指针
+int *p1, *p2; 			// p1和p2都是指向int的指针
 ```
 
 等价于
 
 ```c++
-int* p1;  // p1是指向int的指针
-int* p2;  // p2是指向int的指针
+int* p1;  			// p1是指向int的指针
+int* p2;  			// p2是指向int的指针
 ```
 
 ***指向指针的指针***(二级指针)
 
 ```c++
 int ival = 1024;
-int *pi = &ival;    // pi指向一个int型的数
-int **ppi = &pi;    // ppi指向一个int型的指针
+int *pi = &ival;    		// pi指向一个int型的数
+int **ppi = &pi;   	        // ppi指向一个int型的指针
 ```
 
 关系如下：![二级指针](/Users/crl7/Library/Application Support/typora-user-images/image-20200504184604913.png)
@@ -616,10 +616,10 @@ int **ppi = &pi;    // ppi指向一个int型的指针
 
 ```c++
 int i = 42;
-int *p;         // p是一个int型指针
-int *&r = p;    // r是一个对指针p的引用
-r = &i;         // r引用了一个指针，因此给r赋值&i就是令p指向i
-*r = 0;         // 解引用r得到i，也就是p指向的对象，将i的值改为0
+int *p;       		 	 // p是一个int型指针
+int *&r = p;    		// r是一个对指针p的引用
+r = &i;         		// r引用了一个指针，因此给r赋值&i就是令p指向i
+*r = 0;         		// 解引用r得到i，也就是p指向的对象，将i的值改为0
 ```
 
 面对一条比较复杂的指针或引用的声明语句时，从右向左阅读有助于弄清它的真实含义。
@@ -631,9 +631,9 @@ r = &i;         // r引用了一个指针，因此给r赋值&i就是令p指向i
 在变量类型前添加关键字 `const` 可以创建**值不能被改变的对象**。**`const` 变量必须被初始化**
 
 ```c++
-const int i = get_size();  // 正确：运行时初始化
+const int i = get_size(); 		 // 正确：运行时初始化
 const int j = 42;  		   	 // 正确：编译时初始化
-const int k;  			   		// 错误：k是一个未经初始化的常量
+const int k;  			   	 // 错误：k是一个未经初始化的常量
 ```
 
 ***默认状态下,const对象仅在文件内有效***
@@ -649,7 +649,7 @@ const int k;  			   		// 错误：k是一个未经初始化的常量
 // file_1.cc定义并初始化了一个常量，该常量能被其他文件访问
 extern const int bufSize = fcn();
 // file_1.h头文件
-extern const int bufSize;   // 与file_1.cc中定义的bufSize是同一个
+extern const int bufSize;   		// 与file_1.cc中定义的bufSize是同一个
 ```
 
 ### const引用
@@ -658,9 +658,9 @@ extern const int bufSize;   // 与file_1.cc中定义的bufSize是同一个
 
 ```c++
 const int ci = 1024;
-const int &r1 = ci;      // ok: 引用及其对应的对象都是常量
-r1 = 42;        				// error: r1是对常量的引用
-int &r2 = ci;   			 // error: 试图让一个非常量引用指向一个常量对象
+const int &r1 = ci;      		// ok: 引用及其对应的对象都是常量
+r1 = 42;        			// error: r1是对常量的引用
+int &r2 = ci;   		        // error: 试图让一个非常量引用指向一个常量对象
 ```
 
 大部分情况下，引用的类型要和与之绑定的对象严格匹配。但是有两个例外
@@ -669,10 +669,10 @@ int &r2 = ci;   			 // error: 试图让一个非常量引用指向一个常量�
 
 ```c++
 int i = 42;
-const int &r1 = i;       // 允许将const int&绑定到一个普通int对象上
-const int &r2 = 42;      // ok: r1是一个常量引用
-const int &r3 = r1 * 2;  // ok: r3是一个常量引用
-int &r4 = r1 * 2;       // error: r4是一个普通的非常量引用
+const int &r1 = i;       	 // 允许将const int&绑定到一个普通int对象上
+const int &r2 = 42;     	 // ok: r1是一个常量引用
+const int &r3 = r1 * 2;  	 // ok: r3是一个常量引用
+int &r4 = r1 * 2;       	 // error: r4是一个普通的非常量引用
 ```
 
 要理解以上代码发生了什么，需要理解当一个常量引用被绑定到另一种类型时：
@@ -685,8 +685,8 @@ const int &ri = dval;
 此处`ri`引用了一个`int`型的数，对`ri`的操作应该是整数运算，但`dval`是一个双精度的浮点数而非整数，为了确保`ri`绑定一个整数，编译器会将上述代码变成如下：
 
 ```c++
-const int temp = dval;  //由双精度浮点数生成一个临时的整型常量
-const int &ri = temp;		//让ri绑定这个临时量
+const int temp = dval;  	// 由双精度浮点数生成一个临时的整型常量
+const int &ri = temp;		// 让ri绑定这个临时量
 ```
 
 ### 指针和const
@@ -694,10 +694,10 @@ const int &ri = temp;		//让ri绑定这个临时量
 **指向常量的指针（pointer to const）** 不能用于修改其所指向的对象。常量对象的地址只能使用指向常量的指针来存放，但是指向常量的指针可以指向一个非常量对象。
 
 ```c++
-const double pi = 3.14;     // pi是个常量，它的值不能改变
-double *ptr = &pi;          // error: ptr是一个普通指针
-const double *cptr = &pi;   // ok: cptr可以指向一个双精度常量
-*cptr = 42;         	    // error: 不能给*cptr赋值
+const double pi = 3.14;     	// pi是个常量，它的值不能改变
+double *ptr = &pi;          	// error: ptr是一个普通指针
+const double *cptr = &pi;   	// ok: cptr可以指向一个双精度常量
+*cptr = 42;         	    	// error: 不能给*cptr赋值
 double dval = 3.14; 		// dval是一个双精度浮点纹，它的值可以改变
 cptr = &dval;       		// ok: 但是不能通过cptr改变dval的值
 ```
@@ -706,9 +706,9 @@ cptr = &dval;       		// ok: 但是不能通过cptr改变dval的值
 
 ```c++
 int errNumb = 0;
-int *const curErr = &errNumb;   // curErr将一直指向errNumb
+int *const curErr = &errNumb;  		 // curErr将一直指向errNumb
 const double pi = 3.14159;
-const double *const pip = &pi;  // pip是一个指向常量对象的常量指针
+const double *const pip = &pi;  	 // pip是一个指向常量对象的常量指针
 ```
 
 指针本身是常量并不代表不能通过指针修改其所指向的对象的值，能否这样做完全依赖于其指向对象的类型。
@@ -719,11 +719,11 @@ const double *const pip = &pi;  // pip是一个指向常量对象的常量指针
 
 ```c++
 int i = 0;
-int *const p1 = &i;       // 不能改变p1的值，这是一个顶层const
-const int ci = 42;        // 不能改变ci的值，这是一个顶层const
-const int *p2 = &ci;      // 允许改变p2的值，这是一个底层const
-const int *const p3 = p2; // 靠右的const是顶层const，靠左的是底层const
-const int &r = ci;        // 用于声明引用的const都是底层const
+int *const p1 = &i;      	// 不能改变p1的值，这是一个顶层const
+const int ci = 42;        	// 不能改变ci的值，这是一个顶层const
+const int *p2 = &ci;      	// 允许改变p2的值，这是一个底层const
+const int *const p3 = p2; 	// 靠右的const是顶层const，靠左的是底层const
+const int &r = ci;        	// 用于声明引用的const都是底层const
 ```
 
 当执行拷贝操作时，常量是顶层 `const` 还是底层 `const` 区别明显：
@@ -731,18 +731,18 @@ const int &r = ci;        // 用于声明引用的const都是底层const
 -  顶层 `const` 没有影响。拷贝操作不会改变被拷贝对象的值，因此拷入和拷出的对象是否是常量无关紧要。
 
 ```c++
-i = ci;     // ok: 拷贝ci的值，ci是一个顶层const，对此操作无影响
-p2 = p3;    // ok: p2和p3指向的对象类型相同，p3顶层const的部分不影响
+i = ci;     			// ok: 拷贝ci的值，ci是一个顶层const，对此操作无影响
+p2 = p3;    			// ok: p2和p3指向的对象类型相同，p3顶层const的部分不影响
 ```
 
 - 底层const的限制不能忽视。拷入和拷出的对象必须具有相同的底层 `const` 资格。或者两个对象的数据类型可以相互转换。一般来说，非常量可以转换成常量，反之则不行。
 
 ```c++
-int *p = p3;    	// error: p3包含底层const的定义，而p没有
-p2 = p3;        	// ok: p2和p3都是底层const
-p2 = &i;        	// ok: int*能转换成const int*
-int &r = ci;    	// error: 普通的int&不能绑定到int常量上
-const int &r2 = i;  // ok: const int&可以绑定到一个普通int上
+int *p = p3;    		// error: p3包含底层const的定义，而p没有
+p2 = p3;        		// ok: p2和p3都是底层const
+p2 = &i;        		// ok: int*能转换成const int*
+int &r = ci;    		// error: 普通的int&不能绑定到int常量上
+const int &r2 = i;  		// ok: const int&可以绑定到一个普通int上
 ```
 
 ### constexpr和常量表达式
@@ -752,18 +752,18 @@ const int &r2 = i;  // ok: const int&可以绑定到一个普通int上
 一个对象是否为常量表达式由它的数据类型和初始值共同决定。
 
 ```c++
-const int max_files = 20;           // max_files是常量表达式
-const int limit = max_files + 1;    // limit是常量表达式
-int staff_size = 27;        	    // staff_size不是常量表达式
+const int max_files = 20;           	// max_files是常量表达式
+const int limit = max_files + 1;    	// limit是常量表达式
+int staff_size = 27;        	    	// staff_size不是常量表达式
 const int sz = get_size();  		// sz 不是常量表达式
 ```
 
 `C++11`允许将变量声明为`constexpr`类型以便由编译器来验证变量的值是否是一个常量表达式。
 
 ```c++
-constexpr int mf = 20;          // 20是常量表达式
-constexpr int limit = mf + 1;   // mf + 1是常量表达式
-constexpr int sz = size();      // 只有当size是一个constexpr函数时，才是一条正确的声明语句
+constexpr int mf = 20;          	// 20是常量表达式
+constexpr int limit = mf + 1;   	// mf + 1是常量表达式
+constexpr int sz = size();      	// 只有当size是一个constexpr函数时，才是一条正确的声明语句
 ```
 
 指针和引用都能定义成` constexpr`，但是初始值受到严格限制。**constexpr 指针的初始值必须是0、nullptr 或者是存储在某个固定地址中的对象**。函数体内定义的普通变量一般并非存放在固定地址中，因此 `constexpr` 指针不能指向这样的变量。相反，函数体外定义的变量地址固定不变，可以用来初始化 `constexpr` 指针。
@@ -771,8 +771,8 @@ constexpr int sz = size();      // 只有当size是一个constexpr函数时，�
 在 `constexpr` 声明中如果定义了一个指针，限定符 `constexpr` 仅对指针本身有效，与指针所指的对象无关。
 
 ```c++
-const int *p = nullptr; 	 // p是一个指向整型常量的指针
-constexpr int *q = nullptr;  // q是一个指向整数的常量指针
+const int *p = nullptr; 		 // p是一个指向整型常量的指针
+constexpr int *q = nullptr; 		 // q是一个指向整数的常量指针
 ```
 
 `constexpr` 把它所定义的对象置为了顶层 `const`。
@@ -780,12 +780,12 @@ constexpr int *q = nullptr;  // q是一个指向整数的常量指针
 与其他常量指针类似， `constexpr` 指针既可以指向常量也可以指向一个非常量：
 
 ```c++
-constexpr int *np = nullptr;   // np是一个指向整数的常量指针，其值为空
+constexpr int *np = nullptr;   		// np是一个指向整数的常量指针，其值为空
 int j = 0;
-constexpr int i = 42; 		    // i的类型是整型常量
+constexpr int i = 42; 		    	// i的类型是整型常量
 // i和j都必须定义在函数体之外
-constexpr const int *p= &i;   // p是常量指针，指向整型常量i
-constexpr int *p1 = &j; 	   // p1是常量指针，指向整数j
+constexpr const int *p= &i;   		// p是常量指针，指向整型常量i
+constexpr int *p1 = &j; 	        // p1是常量指针，指向整数j
 ```
 
 `const` 和 `constexpr` 限定的值都是常量。但 `constexpr` 对象的值必须在编译期间确定，而 `const` 对象的值可以延迟到运行期间确定。建议使用 `constexpr` 修饰表示数组大小的对象，因为数组的大小必须在编译期间确定且不能改变。
@@ -803,8 +803,8 @@ constexpr int *p1 = &j; 	   // p1是常量指针，指向整数j
 **格式: typedef 类型 别名；**
 
 ```c++
-typedef double wages;   // wages是double的同义词
-typedef wages base, *p; // base是double的同义词，p是double*的同义词
+typedef double wages;   		// wages是double的同义词
+typedef wages base, *p; 		// base是double的同义词，p是double*的同义词
 ```
 
 `C++11`使用关键字 `using` 进行别名声明（`alias declaration`），作用是把等号左侧的名字规定成等号右侧类型的别名。
@@ -821,14 +821,14 @@ using SI = Sales_item;
 
 ```c++
 // 由val1和val2相加的结果可以推断出item的类型
-auto item = val1 + val2;    // item初始化为val1和val2相加的结果
+auto item = val1 + val2;    	// item初始化为val1和val2相加的结果
 ```
 
 使用 `auto` 也能在一条语句中声明多个变量。因为一条声明语句只能有一个基本数据类型，所以该语句中所有变量的初始基本数据类型都必须一样：
 
 ```c++
 auto i = 0, *p = &i; 		// ok：i是整数、p是整型指针
-auto sz = 0, pi = 3.14; // error：sz和pi的类型不一致
+auto sz = 0, pi = 3.14; 	// error：sz和pi的类型不一致
 ```
 
 编译器推断出来的 `auto` 类型有时和初始值的类型并不完全一样，编译器会适当地改变结果类型，使其更符合初始化规则。
@@ -837,23 +837,23 @@ auto sz = 0, pi = 3.14; // error：sz和pi的类型不一致
 
 ```c++
 int i = 0, &r = i;
-auto a = r;     // a是一个整数(r是i的别名，而i是一个整数)
+auto a = r;     		// a是一个整数(r是i的别名，而i是一个整数)
 ```
 
 - `auto` 一般会忽略顶层 `const`，同时底层 `const` 则会保留下来。
 
 ```c++
 const int ci = i, &cr = ci;
-auto b = ci;    // b是一个整数(ci的顶层const特性被忽略掉了)
-auto c = cr;    // c是一个整数(cr是ci的别名，ci本身是一个顶层const)
-auto d = &i;    // d是一个整型指针(整数的地址就是指向整数的指针)
-auto e = &ci;   // e是一个指向整数常量的指针(对常量对象取地址是一种底层const)
+auto b = ci;    		// b是一个整数(ci的顶层const特性被忽略掉了)
+auto c = cr;    		// c是一个整数(cr是ci的别名，ci本身是一个顶层const)
+auto d = &i;    		// d是一个整型指针(整数的地址就是指向整数的指针)
+auto e = &ci;   		// e是一个指向整数常量的指针(对常量对象取地址是一种底层const)
 ```
 
 如果希望推断出的 `auto` 类型是一个顶层 `const`，需要显式指定 `const auto`。
 
 ```c++
-const auto f = ci;  // ci的推演类型是int，f是const int
+const auto f = ci; 		 // ci的推演类型是int，f是const int
 ```
 
 设置类型为 `auto` 的引用时，原来的初始化规则仍然适用，初始值中的顶层常量属性仍然保留。
@@ -861,14 +861,14 @@ const auto f = ci;  // ci的推演类型是int，f是const int
 ```c++
 auto &g = ci;   				// g是一个整型常量引用，绑定到ci
 auto &h = 42;   				// error: 不能为非常量引用绑定字面值
-const auto &j = 42;     // ok: 可以为常量引用绑定字面值
+const auto &j = 42;     			// ok: 可以为常量引用绑定字面值
 ```
 
 要在一条语句中定义多个变量，切记， 符号`&`和`*`只从属于某个声明符，而非基本数据类型的一部分， 因此初始值必须是同一种类型：
 
 ````c++
-auto k = ci, &l = i;      // k是整数，l是整型引用
-auto &m = ci, *p = &ci;   // m是对整型常量的引用，p是指向整型常量的指针
+auto k = ci, &l = i;      			// k是整数，l是整型引用
+auto &m = ci, *p = &ci;   			// m是对整型常量的引用，p是指向整型常量的指针
 // 错误：i的类型是int而&ci的类型是const int
 auto &n = i，*p2 = &ci;
 ````
@@ -878,16 +878,16 @@ auto &n = i，*p2 = &ci;
 `C++11`新增 `decltype` 类型指示符，作用是选择并返回操作数的数据类型，此过程中编译器不实际计算表达式的值。
 
 ```c++
-decltype(f()) sum = x;  // sum的类型就是函数f的返回类型
+decltype(f()) sum = x;  			// sum的类型就是函数f的返回类型
 ```
 
 `decltype` 处理顶层 `const` 和引用的方式与 `auto` 有些不同，如果 `decltype` 使用的表达式是一个变量，则 `decltype` 返回该变量的类型（包括顶层 `const` 和引用）。
 
 ```c++
 const int ci = 0, &cj = ci;
-decltype(ci) x = 0;     // x的类型是const int
-decltype(cj) y = x;     // y的类型是const int&， y绑定到变量x
-decltype(cj) z;     	 // error: z是一个引用，必须初始化
+decltype(ci) x = 0;     		// x的类型是const int
+decltype(cj) y = x;     		// y的类型是const int&， y绑定到变量x
+decltype(cj) z;     	 		// error: z是一个引用，必须初始化
 ```
 
 `decltype` 和 `auto` 的另一处重要区别是，`decltype` 的结果类型与表达式形式密切相关。注意：如果 `decltype` 使用的是一个不加括号的变量，则得到的结果就是该变量的类型；如果给变量加上了一层或多层括号，则 `decltype` 会得到引用类型，因为变量是一种可以作为赋值语句左值的特殊表达式。
