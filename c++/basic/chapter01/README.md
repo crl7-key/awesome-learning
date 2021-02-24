@@ -109,11 +109,11 @@ int main()
 	int sum  = 0, val = 1;
   // 只要val的值小于等于10，while循环就会持续执行
   while(val <= 10) {
-    sum += val;		//将sum + val 赋予sum
-    ++val;			//将val + 1
+    sum += val;		// 将sum + val 赋予sum
+    ++val;		// 将val + 1
   }
   std::cout << "Sum of 1 to 10 inclusive is"
-    				<< sum << std::endl;
+    	    << sum << std::endl;
   return 0;
 }
 ```
@@ -124,7 +124,7 @@ int main()
 
 ```c++
 while (condition)
-		statement
+	statement
 ```
 
 `while`语句的执行过程是交替检测`condition`条件和执行关联的语句`statement`。直至`condition`为假时停止。所谓**条件**(`condition`)就是一个产生真或假的结果的表达式。
@@ -136,7 +136,7 @@ while (condition)
 ```c++
 // 只要val的值小于等于10，while循环就会持续执行
 while (val <= 10) {
-		sum += val;	 // 将sum + val 赋予sum
+   sum += val;			 // 将sum + val 赋予sum
     ++val;			 // 将val + 1
 }
 ```
@@ -145,7 +145,7 @@ while (val <= 10) {
 
 ```c++
 {
-	sum += val;  	// 将sum + val 赋予sum
+    sum += val;  		// 将sum + val 赋予sum
     ++val;			// 将val + 1
 }
 ```
@@ -160,7 +160,7 @@ while (val <= 10) {
 
 下一条语句   
 
-`++val; //将val加1`
+`++val; // 将val加1`
 
 使用**前缀递增运算符**（`++`）,递增运算符将运算对象的值增加`1`。`++val`等价于`val = val + 1`
 
@@ -183,9 +183,9 @@ int main()
 	int sum = 0;
 	// 从1加到10
 	for (int val = 1; val <= 10; ++ val)
-				sum += val;
+		sum += val;
 	std::cout << "Sum of 1 to 10 inclusive is"
-					  << sum << std::endl;
+		  << sum << std::endl;
   return 0;
 }
 ```
@@ -194,7 +194,7 @@ int main()
 
 ```c++
 for (int val = 1; val <= 10; ++ val)
-			sum += val;
+	sum += val;
 ```
 
 每个`for`语句都包含两个部分：循环头和循环体。循环头控制循环体的执行次数，它由三部分组成：一个初始化语句(`init-statement`)、一个循环条件(`condition`)以及一个表达式(`expression`)。
@@ -227,20 +227,20 @@ int main()
 	int currVal = 0, val = 0;
 	// 读取第一个数，并确保确实有数据可以处理
 	if(std::cin >> currVal) {
-	int cnt = 1;						  // 保存我们正在处理的当前值的个数
-	while(std::cin >> val) { // 读取剩余的数
-		if(val == currVal)		 // 如果值相同
-				++cnt;						// 将cnt加1
-     else {								// 否则，打印前一个值的个数
+	int cnt = 1;						 // 保存我们正在处理的当前值的个数
+	while(std::cin >> val) { 				 // 读取剩余的数
+	    if(val == currVal)		 		         // 如果值相同
+		++cnt;						// 将cnt加1
+     	    else {						// 否则，打印前一个值的个数
      		std::cout << currVal << "occurs"
-     							<< cnt << " times" << endl;
+     			  << cnt << " times" << endl;
      		currVal = val;	 // 记住新值
-     		cnt = 1;				// 重置计数器	
-     }
-	}//while 循环在这里结束
+     		cnt = 1;					// 重置计数器	
+    	    }
+	} // while 循环在这里结束
 	std::cout << currVal << " occurs"
-						<< cnt << " times" << std::endl;
-	}//最外层的if语句在这里结束
+		  << cnt << " times" << std::endl;
+	} // 最外层的if语句在这里结束
 	return 0；
 }
 ```
