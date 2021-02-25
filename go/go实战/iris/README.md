@@ -9,7 +9,7 @@
 * [Yaml](#Yaml)
 * [Post Json](#Post-Json)
 * [TOML](#TOML)
-* [Cache](Cache)
+* [Cache](#Cache)
 
 ## kataras/iris简介
 `github`地址:  
